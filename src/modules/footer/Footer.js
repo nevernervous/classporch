@@ -3,7 +3,6 @@ import './styles.css';
 import {
   Grid,
   Icon,
-  Input,
   Button,
   Menu
 } from 'semantic-ui-react';
@@ -12,6 +11,12 @@ import {history} from '../../redux/store';
 import {connect} from 'react-redux'
 
 class Footer extends Component {
+
+  constructor(props) {
+    super(props);
+    this.handleItemClick = this.handleItemClick.bind(this);
+    this.showSignUp = this.showSignUp.bind(this);
+  }
 
   handleItemClick = (e, {name}) => {
     console.log(name);
@@ -31,6 +36,10 @@ class Footer extends Component {
     }
   };
 
+  showSignUp = () => {
+    history.push('/sign-up');
+  };
+
   render() {
     return (
       <div>
@@ -47,27 +56,20 @@ class Footer extends Component {
               </Grid.Column>
               <Grid.Column textAlign='left' width={6} floated='right'>
                 <div>
-                  <Icon size='large' circular className='icon' name='facebook f'/>
-                  <Icon size='large' circular className='icon' name='twitter'/>
-                  <Icon size='large' circular className='icon' name='linkedin'/>
+                  <Button inverted as={'a'} size='large' circular icon='facebook f' href={'https://www.facebook.com/ClassPorch-1715528735411313'}/>
+                  <Button inverted as={'a'} size='large' circular icon='twitter' href={'https://twitter.com/classporch'}/>
+                  <Button inverted as={'a'} size='large' circular icon='instagram' href={'https://www.instagram.com/classporch/'}/>
                 </div>
                 <div className='subscribe-label'>
-                  SUBSCRIBE US
+                  INTRODUCING TOP TUTORS
                 </div>
                 <p className='subscribe-subtitle'>
-                  Placeat copper mug street art jianbing neutra. Ea consectetur qui godard
-                  pitchfork, vexillologist asymmetrical activated charcoal whatever twee sartorial
-                  delectus nisi lumbersexual aliquip. Eiusmod williamsburg street art distillery
-                  pour-over. Proident copper mug photo booth, gochujang kitsch irony cray swag
-                  yuccie glossier mollit VHS tumblr. Reprehenderit umami vape street art kale
-                  chips vexillologist, commodo adipisicing sustainable shoreditch man braid tacos
-                  salvia. Eu assumenda scenester, eiusmod DIY fashion axe fanny pack tattooed
-                  aliquip chambray actually. Irony ex trust fund, neutra narwhal pickled tote bag
-                  small batch.
+                  At ClassPorch, we have experienced and certified tutors as new tutors are carefully interviewed to
+                  ensure they are well qualified before they acquire a tutoring position. With this, we can be sure that
+                  our students feel comfortable working with a particular tutor and get the best help possible!
                 </p>
-                <Input placeholder='johndoe@example.com'/>
                 <br/>
-                <Button color='yellow' className='subscribe-button'>SUBSCRIBE</Button>
+                <Button color='yellow' className='subscribe-button' onClick={this.showSignUp}>FIND TUTORS</Button>
               </Grid.Column>
               <Grid.Column width={1}>
               </Grid.Column>

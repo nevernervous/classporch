@@ -43,7 +43,6 @@ export default class Home extends React.Component {
         <Section3/>
         <Section4/>
         <Section6/>
-        <Section7/>
       </div>
     );
   }

@@ -10,12 +10,12 @@ const Section3 = () => (
     <Grid className='section-three'>
         <Grid.Row centered>
             <Grid.Column width={8}>
-                <p className='section3-title'>INTRODUCING BEST <span className='section3-title-semibold'>TUTORS</span>
+                <p className='section3-title'>INTRODUCING <span className='section3-title-semibold'>TOP TUTORS</span>
                 </p>
             </Grid.Column>
         </Grid.Row>
         <Grid.Row centered>
-            <div className='section3-seperator'></div>
+            <div className='section3-seperator'/>
         </Grid.Row>
         <Grid.Row centered>
             <Grid.Column width={10}>
@@ -75,8 +75,8 @@ const Section3 = () => (
                             <Image src={imageFour} />
                         </Grid.Column>
                         <Grid.Column width={12}>
-                            <p className='section-three-feature-header'>Easy video chats</p>
-                            <p className='section-three-feature-details'>With our interactive technology at ClassPorch tutors, we make learning very effective and fun. Our virtual classroom is equipped with live video, whiteboard, text- and voice-chat, and file sharing tools that allow students to get the most out of every session.</p>
+                            <p className='section-three-feature-header'> Whiteboard + Audio/Video Compatability</p>
+                            <p className='section-three-feature-details'>With our interactive technology at ClassPorch, we make learning very effective and fun. Our virtual classroom is equipped with live video, whiteboard, text- and voice-chat, and file sharing tools that allow students to get the most out of every session.</p>
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>

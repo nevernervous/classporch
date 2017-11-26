@@ -19,7 +19,8 @@ export default class HourlyRateSection extends React.Component {
                             transparent
                             type='number'
                             required
-                            className='input-hourly-rate'/>
+                            className='input-hourly-rate'
+                            onChange={this.props.onChange}/>
                         <span className='input-hourly-rate'>
                             $ per hour
                         </span>
