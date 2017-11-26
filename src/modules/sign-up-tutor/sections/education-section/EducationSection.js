@@ -44,15 +44,15 @@ export default class EducationSection extends React.Component {
                 </Grid.Row>
                 <Grid.Row centered>
                     <Grid.Column width={12} textAlign='left'>
-                        <Input type='text' name={'college_name'} fluid placeholder='Name of College'/>
+                        <Input type='text' name={'college_name'} fluid placeholder='Name of College' onChange={this.props.onChange}/>
                     </Grid.Column>
                 </Grid.Row>
                 <Grid.Row centered>
                     <Grid.Column width={6} textAlign='left'>
-                        <Input fluid name={'start_education'} type='text' placeholder='Start Date * (dd/mm/yyyy)' onFocus={this.onFocusChange} min='1970-01-01' max={moment().format('Y-mm-D')} onBlur={this.onFocusChange} required/>
+                        <Input fluid name={'start_education'} type='text' placeholder='Start Date * (dd/mm/yyyy)' onFocus={this.onFocusChange} min='1970-01-01' max={moment().format('Y-mm-D')} onBlur={this.onFocusChange} required onChange={this.props.onChange}/>
                     </Grid.Column>
                      <Grid.Column width={6} textAlign='left'>
-                        <Input fluid name={'finish_education'} type='text' placeholder='End Date * (dd/mm/yyyy)' onFocus={this.onFocusChange} min='1970-01-01' max={moment().format('Y-mm-D')} onBlur={this.onFocusChange} required/>
+                        <Input fluid name={'finish_education'} type='text' placeholder='End Date * (dd/mm/yyyy)' onFocus={this.onFocusChange} min='1970-01-01' max={moment().format('Y-mm-D')} onBlur={this.onFocusChange} required onChange={this.props.onChange}/>
                     </Grid.Column>
                 </Grid.Row>
                 <Grid.Row centered>
@@ -64,7 +64,7 @@ export default class EducationSection extends React.Component {
                 </Grid.Row>
                 <Grid.Row centered>
                     <Grid.Column width={4}>
-                        <Input required fluid name='experience' placeholder='Experience (in months)'/>
+                        <Input required fluid name='experience' placeholder='Experience (in months)' onChange={this.props.onChange}/>
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
