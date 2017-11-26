@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Grid, Input} from 'semantic-ui-react';
 import './styles.css';
 
-const ContactSection = () => (
+const ContactSection = (props) => (
     <Grid className='sign-up-contact-section-body'>
                 <Grid.Row centered>
                     <Grid.Column width={12} textAlign='left'>
@@ -11,10 +11,10 @@ const ContactSection = () => (
                 </Grid.Row>
                 <Grid.Row centered>
                     <Grid.Column width={6} textAlign='left'>
-                        <Input fluid name='email' placeholder='Email' type='email'/>
+                        <Input fluid name='email' placeholder='Email' type='email' onChange={props.onChange}/>
                     </Grid.Column>
                     <Grid.Column width={6} textAlign='left'>
-                        <Input fluid name='mobile' placeholder='Phone *' required type='phone'/>
+                        <Input fluid name='mobile' placeholder='Phone *' required type='phone' onChange={props.onChange}/>
                     </Grid.Column>
                 </Grid.Row>
             </Grid>

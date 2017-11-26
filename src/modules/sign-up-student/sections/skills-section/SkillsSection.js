@@ -53,7 +53,7 @@ class SkillsSection extends React.Component{
             <Grid stackable className='sign-up-about-education-body'>
                 <Grid.Row centered>
                     <Grid.Column width={12} textAlign='left'>
-                        <p className='sign-up-label'>SKILLS YOU WANT TO TEACH</p>
+                        <p className='sign-up-label'>SKILLS YOU WANT TO LEARN</p>
                     </Grid.Column>
                 </Grid.Row>
                 <Grid.Row centered>

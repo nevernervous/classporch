@@ -106,6 +106,7 @@ class SignUpTutor extends React.Component {
   };
 
   render() {
+    console.log(this.state)
     return (
       <Form encType='application/json' onSubmit={this.onFormSubmitted}>
         <TopSection/>
