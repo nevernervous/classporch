@@ -14,7 +14,11 @@ export default class Section2 extends React.Component {
   }
 
   expandContent = () => {
-    this.setState({readMore: true});
+    if(this.state.readMore) {
+      history.push('/sign-up');
+    } else {
+      this.setState({readMore: true});
+    }
   };
 
   render() {
@@ -72,7 +76,7 @@ export default class Section2 extends React.Component {
               </p>
               {readMore ? expandedContent : content}
               <br/>
-              { !readMore ? <Button circular basic color='yellow' size='large' onClick={this.expandContent}>READ MORE</Button> : null}
+              <Button circular basic color='yellow' size='large' onClick={this.expandContent}>{ readMore ? 'FIND MORE' : 'READ MORE'}</Button>
             </div>
           </Grid.Column>
           <Grid.Column width={6} className='section-background' floated='left'>

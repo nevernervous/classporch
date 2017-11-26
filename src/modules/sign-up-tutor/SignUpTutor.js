@@ -19,6 +19,7 @@ class SignUpTutor extends React.Component {
     super(props);
     this.onChangeSkills = this.onChangeSkills.bind(this);
     this.onFormSubmitted = this.onFormSubmitted.bind(this);
+    this.onChange = this.onChange.bind(this);
   }
 
   state = {

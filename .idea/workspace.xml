@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3759a9a3-923b-4361-83a0-3877315bb0cd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/footer/Footer.js" afterPath="$PROJECT_DIR$/src/modules/footer/Footer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/home/Home.js" afterPath="$PROJECT_DIR$/src/modules/home/Home.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/home/sections/section2/Section2.js" afterPath="$PROJECT_DIR$/src/modules/home/sections/section2/Section2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/home/sections/section3/Section3.js" afterPath="$PROJECT_DIR$/src/modules/home/sections/section3/Section3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/home/sections/section4/Section4.js" afterPath="$PROJECT_DIR$/src/modules/home/sections/section4/Section4.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/sign-up-tutor/SignUpTutor.js" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/SignUpTutor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/about-section/AboutSection.js" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/about-section/AboutSection.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/contact-section/ContactSection.js" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/contact-section/ContactSection.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/education-section/EducationSection.js" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/education-section/EducationSection.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/hourly-rate-section/HourlyRateSection.js" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/hourly-rate-section/HourlyRateSection.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,62 +18,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BottomSection.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/sections/bottom-section/BottomSection.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HourlyRateSection.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/sections/hourly-rate-section/HourlyRateSection.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Footer.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/modules/footer/Footer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="59" column="43" lean-forward="false" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SignUpTutor.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/SignUpTutor.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1274">
-              <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContactSection.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/sections/contact-section/ContactSection.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="16" column="105" lean-forward="false" selection-start-line="16" selection-start-column="105" selection-end-line="16" selection-end-column="105" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="EducationSection.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/sections/education-section/EducationSection.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
+            <state relative-caret-position="808">
               <caret line="66" column="131" lean-forward="false" selection-start-line="66" selection-start-column="131" selection-end-line="66" selection-end-column="131" />
               <folding />
             </state>
@@ -89,7 +31,7 @@
       <file leaf-file-name="AboutSection.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/sections/about-section/AboutSection.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
+            <state relative-caret-position="75">
               <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
               <folding />
             </state>
@@ -99,18 +41,72 @@
       <file leaf-file-name="Section1.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modules/home/sections/section1/Section1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="5" />
+            <state relative-caret-position="330">
+              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Home.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/home/Home.js">
+      <file leaf-file-name="Section6.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/home/sections/section6/Section6.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+            <state relative-caret-position="195">
+              <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Section5.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/home/sections/section5/Section5.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="41" column="10" lean-forward="false" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Section4.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/home/sections/section4/Section4.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Section3.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/home/sections/section3/Section3.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="58" column="47" lean-forward="true" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Section2.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/modules/home/sections/section2/Section2.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignUpTutor.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/SignUpTutor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="53" column="11" lean-forward="true" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -199,7 +195,6 @@
         <option value="$PROJECT_DIR$/src/modules/footer-min/FooterMin.js" />
         <option value="$PROJECT_DIR$/src/modules/navbar/Navbar.js" />
         <option value="$PROJECT_DIR$/src/modules/home/sections/section1/styles.css" />
-        <option value="$PROJECT_DIR$/src/modules/home/sections/section4/Section4.js" />
         <option value="$PROJECT_DIR$/src/modules/home/sections/section6/Section6.js" />
         <option value="$PROJECT_DIR$/src/modules/home/sections/section3/Section3.js" />
         <option value="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/education-section/EducationSection.js" />
@@ -208,9 +203,10 @@
         <option value="$PROJECT_DIR$/src/modules/home/Home.js" />
         <option value="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/about-section/AboutSection.js" />
         <option value="$PROJECT_DIR$/src/modules/home/sections/section1/Section1.js" />
-        <option value="$PROJECT_DIR$/src/modules/home/sections/section2/Section2.js" />
-        <option value="$PROJECT_DIR$/src/modules/sign-up-tutor/SignUpTutor.js" />
         <option value="$PROJECT_DIR$/src/modules/footer/Footer.js" />
+        <option value="$PROJECT_DIR$/src/modules/home/sections/section4/Section4.js" />
+        <option value="$PROJECT_DIR$/src/modules/sign-up-tutor/SignUpTutor.js" />
+        <option value="$PROJECT_DIR$/src/modules/home/sections/section2/Section2.js" />
       </list>
     </option>
   </component>
@@ -351,12 +347,12 @@
       <option name="presentableId" value="Default" />
       <updated>1511472396900</updated>
       <workItem from="1511472399355" duration="4804000" />
-      <workItem from="1511686178288" duration="18880000" />
+      <workItem from="1511686178288" duration="20080000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23684000" />
+    <option name="totallyTimeSpent" value="24884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="-164" width="1920" height="1080" extended-state="0" />
@@ -394,23 +390,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/modules/chat/Chat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/home/sections/section5/Section5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="10" lean-forward="false" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/menu/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -725,26 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/home/sections/section4/Section4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="128" lean-forward="false" selection-start-line="36" selection-start-column="128" selection-end-line="36" selection-end-column="128" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/home/sections/section6/Section6.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/sections/top-section/TopSection.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -761,10 +720,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/sections/education-section/EducationSection.js">
+    <entry file="file://$PROJECT_DIR$/src/modules/home/Home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="66" column="131" lean-forward="false" selection-start-line="66" selection-start-column="131" selection-end-line="66" selection-end-column="131" />
+        <state relative-caret-position="0">
+          <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/footer/Footer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" column="43" lean-forward="false" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/sections/hourly-rate-section/HourlyRateSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -785,25 +762,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/home/sections/section3/Section3.js">
+    <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/sections/education-section/EducationSection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="77" column="115" lean-forward="true" selection-start-line="77" selection-start-column="115" selection-end-line="77" selection-end-column="115" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/home/Home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+        <state relative-caret-position="808">
+          <caret line="66" column="131" lean-forward="false" selection-start-line="66" selection-start-column="131" selection-end-line="66" selection-end-column="131" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/sections/about-section/AboutSection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
+        <state relative-caret-position="75">
           <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
           <folding />
         </state>
@@ -811,42 +780,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/home/sections/section1/Section1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="330">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/home/sections/section2/Section2.js">
+    <entry file="file://$PROJECT_DIR$/src/modules/home/sections/section6/Section6.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="46" column="52" lean-forward="true" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
+        <state relative-caret-position="195">
+          <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/sections/hourly-rate-section/HourlyRateSection.js">
+    <entry file="file://$PROJECT_DIR$/src/modules/home/sections/section5/Section5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        <state relative-caret-position="615">
+          <caret line="41" column="10" lean-forward="false" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/home/sections/section3/Section3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="58" column="47" lean-forward="true" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/home/sections/section3/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/home/sections/section4/Section4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/SignUpTutor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1274">
-          <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+        <state relative-caret-position="343">
+          <caret line="53" column="11" lean-forward="true" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/footer/Footer.js">
+    <entry file="file://$PROJECT_DIR$/src/modules/home/sections/section2/Section2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="59" column="43" lean-forward="false" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
