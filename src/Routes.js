@@ -48,9 +48,9 @@ const Routes = () => {
         <Route exact path={'/dashboard/tutor'} component={DashboardTutor}/>
         <Route exact path={'/profile/student'} component={ProfileStudent}/>
         <Route exact path={'/profile/tutor'} component={ProfileTutor}/>
-        <Route path={'/sign-up'} component={SignUpMethods}/>
-        <Route path={'/sign-up/tutor'} component={SignUpTutor}/>
-        <Route path={'/sign-up/student'} component={SignUpStudent}/>
+        <Route exact path={'/sign-up/tutor'} component={SignUpTutor}/>
+        <Route exact path={'/sign-up/student'} component={SignUpStudent}/>
+        <Route exact path={'/sign-up'} component={SignUpMethods}/>
         <Redirect to={'/'}/>
       </Switch>
     </ConnectedRouter>
