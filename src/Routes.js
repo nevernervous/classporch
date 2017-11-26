@@ -2,7 +2,6 @@ import React from 'react';
 import {Redirect, Route, Switch} from 'react-router-dom';
 import {ConnectedRouter} from 'react-router-redux';
 import {history} from './redux/store';
-import App from './App';
 import {
   Home,
   Login,
@@ -32,46 +31,29 @@ const Routes = () => {
   return (
     <ConnectedRouter history={history}>
       <Switch>
-        <Route exact path={'/'} component={App}/>
+        <Route exact path={'/'} component={Home}/>
+        <Route exact path={'/chats'} component={Messaging}/>
+        <Route exact path='/contact' component={ContactUs}/>
+        <Route exact path='/privacy-policy' component={PrivacyPolicy}/>
+        <Route exact path='login' component={LoginRedux}/>
+        <Route exact path='/search' component={SearchResults}/>
+        <Route exact path='/add-credits' component={AddCredits}/>
+        <Route exact path='/link-account' component={LinkAccount}/>
+        <Route exact path='/request-money' component={RequestMoney}/>
+        <Route exact path='/previous-expenses' component={PreviousExpenses}/>
+        <Route exact path={'/terms-of-service'} component={TermsOfService}/>
+        <Route exact path={'/terms-of-service/tutor'} component={TosTutor}/>
+        <Route exact path={'/terms-of-service/student'} component={TosStudent}/>
+        <Route exact path={'/dashboard/student'} component={DashboardStudent}/>
+        <Route exact path={'/dashboard/tutor'} component={DashboardTutor}/>
+        <Route exact path={'/profile/student'} component={ProfileStudent}/>
+        <Route exact path={'/profile/tutor'} component={ProfileTutor}/>
+        <Route path={'/sign-up'} component={SignUpMethods}/>
+        <Route path={'/sign-up/tutor'} component={SignUpTutor}/>
+        <Route path={'/sign-up/student'} component={SignUpStudent}/>
       </Switch>
     </ConnectedRouter>
   );
 };
 
 export default Routes;
-
-// const x = () => (
-//   <Router history={history}>
-//     <Route path="/" component={App}>
-//       <IndexRoute component={Home}/>
-//       <Route path='/chats' component={Chat}/>
-//       <Route path='/messages' component={Messaging}/>
-//       <Route path='/contact' component={ContactUs}/>
-//       <Route path='/terms-of-service'>
-//         <IndexRoute component={TermsOfService}/>
-//         <Route path='student' component={TosStudent}/>
-//         <Route path='tutor' component={TosTutor}/>
-//       </Route>
-//       <Route path='/privacy-policy' component={PrivacyPolicy}/>
-//       <Route path='login' component={LoginRedux}/>
-//       <Route path='dashboard'>
-//         <Route path='student' component={DashboardStudent}/>
-//         <Route path='tutor' component={DashboardTutor}/>
-//       </Route>
-//       <Route path='profile'>
-//         <Route path='student' component={ProfileStudent}/>
-//         <Route path='tutor' component={ProfileTutor}/>
-//       </Route>
-//       <Route path='/search' component={SearchResults}/>
-//       <Route path='/add-credits' component={AddCredits}/>
-//       <Route path='/link-account' component={LinkAccount}/>
-//       <Route path='/request-money' component={RequestMoney}/>
-//       <Route path='/previous-expenses' component={PreviousExpenses}/>
-//       <Route path='sign-up'>
-//         <IndexRoute component={SignUpMethods}/>
-//         <Route path='tutor' component={SignUpTutor}/>
-//         <Route path='student' component={SignUpStudent}/>
-//       </Route>
-//     </Route>
-//   </Router>
-// );

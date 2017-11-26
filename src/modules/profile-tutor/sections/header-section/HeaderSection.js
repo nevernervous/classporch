@@ -5,9 +5,6 @@ import {connect} from 'react-redux'
 import RequestSession from './RequestSession'
 import './styles.css'
 
-const FileInput = require('react-file-input');
-
-
 class HeaderSection extends Component {
 
   handleChange = (event) => {
@@ -45,11 +42,11 @@ class HeaderSection extends Component {
             <div>
               {userId === presentProfileId ?
                 <form className='profile-picture-form'>
-                  <FileInput name="myImage"
-                             accept=".png,.gif"
-                             placeholder="Change Profile Picture"
-                             className='image-input'
-                             onChange={this.handleChange}/>
+                  {/*<FileInput name="myImage"*/}
+                             {/*accept=".png,.gif"*/}
+                             {/*placeholder="Change Profile Picture"*/}
+                             {/*className='image-input'*/}
+                             {/*onChange={this.handleChange}/>*/}
                 </form>
                 :
                 <div style={{display: 'flex', justifyContent: 'flex-end'}}>

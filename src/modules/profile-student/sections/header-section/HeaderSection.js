@@ -3,7 +3,6 @@ import {Header, Grid} from 'semantic-ui-react';
 import {connect} from 'react-redux';
 
 import './styles.css'
-var FileInput = require('react-file-input');
 
 // import RequestSession from './RequestSession'
 
@@ -36,11 +35,11 @@ class HeaderSection extends Component {
           </Grid.Column>
           <Grid.Column width={6} textAlign='right'>
             <form className='profile-picture-form'>
-              <FileInput name="myImage"
-                         accept=".jpg, .jpeg"
-                         placeholder={changeProfilePicturePlaceholder}
-                         className='image-input'
-                         onChange={this.handleChange}/>
+              {/*<FileInput name="myImage"*/}
+                         {/*accept=".jpg, .jpeg"*/}
+                         {/*placeholder={changeProfilePicturePlaceholder}*/}
+                         {/*className='image-input'*/}
+                         {/*onChange={this.handleChange}/>*/}
             </form>
           </Grid.Column>
 

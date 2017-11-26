@@ -183,19 +183,19 @@ class Navbar extends Component {
     if (this.props.role !== 'student') {
       return null
     }
-    if (history.getCurrentLocation().pathname === '/search' || history.getCurrentLocation().pathname === '/dashboard/student') {
+    if (window.location.pathname === '/search' || window.location.pathname === '/dashboard/student') {
       return this.getSearchBar()
     } else {
       return null
     }
-  }
+  };
 
   render() {
     const {authToken, role} = this.props;
     let menuRight = authToken ? this.getLoggedInMenuItems() : this.getItems();
     let dashboardLink = role === "student" ? '/dashboard/student' : '/dashboard/tutor';
     let isDashboardAccessible = authToken ? dashboardLink : '/';
-    let isShowSearchBar = history.getCurrentLocation().pathname === '/search' ? this.getSearchBar() : null
+    let isShowSearchBar = window.location.pathname === '/search' ? this.getSearchBar() : null;
 
     return (
       <Menu stackable borderless className='menubar'>

@@ -1,15 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {Navbar, Footer} from './modules';
-import './App.css';
+import Routes from './Routes';
+import {history} from "./redux/store";
 
-export default class App extends Component {
+export default class App extends React.Component {
   render() {
-    return(
-        <div>
-          <Navbar></Navbar>
-            {this.props.children}
-          <Footer></Footer>
-        </div>
+    return (
+      <div>
+        <Navbar/>
+        <Routes history={history}/>
+        <Footer/>
+      </div>
     )
   }
 }
