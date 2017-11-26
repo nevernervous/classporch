@@ -4,8 +4,7 @@ import {routerMiddleware, routerReducer} from 'react-router-redux';
 import logger from 'redux-logger';
 import ReduxThunk from 'redux-thunk'
 import reducers from './reducers';
-import {loadState, saveState} from './localStorage';
-import throttle from 'lodash/throttle';
+import {loadState} from './localStorage';
 import {createEpicMiddleware} from 'redux-observable';
 import epics from './epics';
 import firebase from 'firebase';
@@ -52,6 +51,7 @@ const store = createStore(
     ...reducers,
     router: routerReducer
   }),
+  persistedState,
   enhancers
 );
 

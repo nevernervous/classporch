@@ -77,4 +77,6 @@ export const PROFILE_PICTURE_PROGRESS = 'profile_picture_progress'
 export const PROFILE_PICTURE_SUCCESS = 'profile_picture_success'
 export const PROFILE_PICTURE_FAIL = 'profile_picture_fail'
 
-export const TOGGLE_SEARCH_MODE = 'toggle_search_mode'
+export const TOGGLE_SEARCH_MODE = 'toggle_search_mode';
+
+export const STATE_PERSISTED = 'STATE_PERSISTED';
