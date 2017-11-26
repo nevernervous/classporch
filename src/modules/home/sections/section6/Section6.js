@@ -1,6 +1,11 @@
 import React from 'react';
 import {Grid, Button} from 'semantic-ui-react';
+import {history} from "../../../../redux/store";
 import './styles.css'
+
+const showContactUs = () => {
+  history.push('/contact');
+};
 
 const Section6 = () => (
     <Grid className='section-six'>
@@ -11,7 +16,7 @@ const Section6 = () => (
             </Grid.Column>
         </Grid.Row>
         <Grid.Row centered>
-            <div className='section6-seperator'></div>
+            <div className='section6-seperator'/>
         </Grid.Row>
         <Grid.Row centered>
             <Grid.Column width={10}>
@@ -24,7 +29,7 @@ const Section6 = () => (
             <Grid.Column width={8}>
                 <br/>
                 <br/>
-                <Button circular basic color='yellow' size='large'>WRITE TO US</Button>
+                <Button circular basic color='yellow' size='large' onClick={showContactUs}>WRITE TO US</Button>
             </Grid.Column>
         </Grid.Row>
     </Grid>
