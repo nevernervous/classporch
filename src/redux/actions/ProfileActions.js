@@ -9,6 +9,7 @@ import {
   EDIT_PROFILE_SUCCESS,
   EDIT_PROFILE_FAIL,
   CHANGE_EDUCATION,
+  CHANGE_PICTURE,
   CHANGE_SKILLS,
   UPLOAD_PROFILE_PICTURE,
   UPLOAD_PROFILE_PICTURE_PROGRESS,
@@ -134,6 +135,14 @@ export const onChangeSkill = (editedSkills) => {
   }
 }
 
+export const updateProfilePicture = (picturePath) => {
+  return{
+    type:CHANGE_PICTURE,
+    payload:picturePath
+  }
+}
+
+
 export const updateProfile = ({profile, userId, educationalAttributes, authToken}) => {
   return async (dispatch) => {
     try {
@@ -147,6 +156,7 @@ export const updateProfile = ({profile, userId, educationalAttributes, authToken
           "first_name": profile['full-name'].split(' ')[0],
           "last_name": profile['full-name'].split(' ')[1],
           "gender": profile.gender,
+          "profile-picture": profile["profile-picture"],
           "birthday_date": profile['birthday date'],
           "country": profile.country,
           "city": profile.city,

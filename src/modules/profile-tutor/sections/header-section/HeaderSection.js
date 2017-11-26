@@ -1,15 +1,33 @@
 import React, {Component} from 'react'
-import {Grid, Button} from 'semantic-ui-react'
 import {history} from '../../../../redux/store';
 import {connect} from 'react-redux'
 import RequestSession from './RequestSession'
+import {
+  Grid,
+  List,
+  Button,
+  Input,
+  Form,
+  Image
+} from 'semantic-ui-react';
 import './styles.css'
 
 class HeaderSection extends Component {
 
-  handleChange = (event) => {
+  startUploading = (event) => {
+    // this.setState({isUploadingFile: true});
+    // this.props.uploadFile(event.target.files[0], {contentType: 'image/jpeg'});
+    // event.target.value = null;
     console.log('Selected file:', event.target.files[0]);
+    this.props.updateProfilePicture()
   };
+
+  onFocusChange = (e) => {
+    if(e.type==='focus'){
+      e.target.type = 'file'
+      e.target.click()
+    }
+  }
 
   redirectToChats = () => {
     const currentUser = {
@@ -41,13 +59,18 @@ class HeaderSection extends Component {
           <Grid.Column width={6} textAlign='right'>
             <div>
               {userId === presentProfileId ?
-                <form className='profile-picture-form'>
-                  {/*<FileInput name="myImage"*/}
-                             {/*accept=".png,.gif"*/}
-                             {/*placeholder="Change Profile Picture"*/}
-                             {/*className='image-input'*/}
-                             {/*onChange={this.handleChange}/>*/}
-                </form>
+
+                <Form loading={false} className='profile-picture-form' >
+                    <Form.Field 
+                      control={'input'} 
+                      type='file' 
+                      onFocus={this.onFocusChange}
+                      onBlur={this.onFocusChange}
+                      accept={'.jpg, .jpeg'} 
+                      placeholder='Change profile picture'
+                      className='image-input'
+                      onChange={this.startUploading}/>
+                </Form>
                 :
                 <div style={{display: 'flex', justifyContent: 'flex-end'}}>
                   <RequestSession profile={profile}/>
@@ -99,3 +122,32 @@ const styles = {
 // }
 
 export default connect(null, {})(HeaderSection)
+
+
+
+
+
+                
+{/* <form className='profile-picture-form'> 
+<Form.Field name="myImage"
+            type='text'
+            onFocus={this.onFocusChange}
+            onBlur={this.onFocusChange}
+            control={'input'}
+           accept={'.jpg, .jpeg'} 
+           placeholder="Change Profile Picture"
+           className='image-input'
+           onChange={this.handleChange}/>
+</form>  */}
+
+
+
+
+
+//  <form className='profile-picture-form'> 
+//                   <FileInput name="myImage"
+//                              accept=".png,.gif"
+//                              placeholder="Change Profile Picture"
+//                              className='image-input'
+//                              onChange={this.handleChange}/>
+//                  </form> 

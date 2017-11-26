@@ -11,7 +11,8 @@ import {
     EDIT_PROFILE_SUCCESS,
     EDIT_PROFILE_FAIL,
     CHANGE_EDUCATION,
-    CHANGE_SKILLS
+    CHANGE_SKILLS,
+    CHANGE_PICTURE
 } from '../actions/types'
 
 const INITIAL_STATE = {
@@ -79,6 +80,16 @@ export default (state=INITIAL_STATE,action) => {
                         ...state.profile,
                         'skill-ids': action.payload
                     }
+            }
+        }
+
+        case CHANGE_PICTURE:{
+            return {
+                ...state, 
+                profile:{
+                    ...state.profile,
+                    'profile-picture':action.payload
+                }
             }
         }
         

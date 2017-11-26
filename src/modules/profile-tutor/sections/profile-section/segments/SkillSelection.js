@@ -27,6 +27,7 @@ class SkillsSelection extends React.Component{
             console.log(e)
         }
     }
+    
 
     handleAddition = (e, { value }) => {
         this.setState({
@@ -65,7 +66,6 @@ class SkillsSelection extends React.Component{
                             selection
                             fluid
                             multiple
-                            allowAdditions
                             value={displayableSkills}
                             onAddItem={this.handleAddition}
                             onChange={this.handleChange}

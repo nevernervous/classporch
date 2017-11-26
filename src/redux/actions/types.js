@@ -71,6 +71,7 @@ export const UPLOAD_PROFILE_PICTURE_ERROR = 'UPLOAD_PROFILE_PICTURE_ERROR'
 
 export const CHANGE_EDUCATION = 'change_education'
 export const CHANGE_SKILLS = 'change_skills'
+export const CHANGE_PICTURE = 'change_picture'
 
 export const PROFILE_PICTURE_START = 'profile_picture_start'
 export const PROFILE_PICTURE_PROGRESS = 'profile_picture_progress'

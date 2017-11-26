@@ -66,7 +66,6 @@ class SkillsSection extends React.Component{
                             selection
                             fluid
                             multiple
-                            allowAdditions
                             value={displayableSkills}
                             onAddItem={this.handleAddition}
                             onChange={this.handleChange}
