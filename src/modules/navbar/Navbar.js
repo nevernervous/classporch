@@ -15,6 +15,19 @@ class Navbar extends Component {
     searchWord: ''
   };
 
+  constructor(props) {
+    super(props);
+    console.log(props);
+    this.handleItemClick = this.handleItemClick.bind(this);
+    this.capitalize = this.capitalize.bind(this);
+    this.getLoggedInMenuItems = this.getLoggedInMenuItems.bind(this);
+    this.getItems = this.getItems.bind(this);
+    this.onSearchWordChange = this.onSearchWordChange.bind(this);
+    this.onSearch = this.onSearch.bind(this);
+    this.getSearchBar = this.getSearchBar.bind(this);
+    this.isShowSearchBar = this.isShowSearchBar.bind(this);
+  }
+
   componentWillMount() {
     this.setState({activeItem: ''})
   }
@@ -60,7 +73,6 @@ class Navbar extends Component {
       .map((char, i) => i === 0 ? char.toUpperCase() : char)
       .reduce((final, char) => final += char, '')
   }
-
 
   getLoggedInMenuItems() {
     const loggedInMenuItems = [

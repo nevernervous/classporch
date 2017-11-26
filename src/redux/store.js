@@ -21,7 +21,7 @@ const firestore = firebase.firestore();
 const storage = firebase.storage();
 
 const history = createHistory();
-
+const routeMiddleWare = routerMiddleware(history);
 const epicMiddleWare = createEpicMiddleware(epics, {
   dependencies: {
     auth,
@@ -31,15 +31,15 @@ const epicMiddleWare = createEpicMiddleware(epics, {
   }
 });
 
-const middleWare = [
+const middlewares = [
   logger(),
   ReduxThunk,
-  routerMiddleware,
+  routeMiddleWare,
   epicMiddleWare
 ];
 
 const enhancers = compose(
-  applyMiddleware(...middleWare),
+  applyMiddleware(...middlewares),
   window.devToolsExtension ? window.devToolsExtension() : f => f
 );
 
@@ -52,13 +52,7 @@ const store = createStore(
     ...reducers,
     router: routerReducer
   }),
-  persistedState,
   enhancers
 );
-
-store.subscribe(throttle(() => {
-  saveState(store.getState())
-}), 1000);
-
 
 export {store, history};
