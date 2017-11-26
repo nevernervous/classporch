@@ -4,7 +4,7 @@ import { HeaderSection,RatingSection,ReviewsSection,ProfileSection } from './sec
 import { Button } from 'semantic-ui-react'
 import { connect } from 'react-redux';
 import { Notification } from 'react-notification';
-import { profileRequested,getDashboard, toggleProfileMode, onChangeUserInfo,
+import { profileRequested,getDashboard, toggleProfileMode, onChangeUserInfo,updateProfilePicture,
 	onChangeEducation,onChangeSkill, updateProfile, ChatActions } from '../../redux/actions';
 
 class ProfileTutor extends React.Component {
@@ -57,7 +57,8 @@ class ProfileTutor extends React.Component {
         return (
         	<div style={{width:'100%',display:'flex',flexDirection:'column', alignItems:'center' }} >
 				<HeaderSection userId={userId} authToken={authToken} profile={profile} presentProfileId={presentProfileId}
-								role= {role} lastName = {lastName} firstName={firstName} showMessages={this.props.showMessages} />
+								role= {role} lastName = {lastName} firstName={firstName} showMessages={this.props.showMessages}
+								updateProfilePicture={updateProfilePicture} />
 				
                 <RatingSection userId={userId} authToken={authToken} firstName={firstName} role={role} 
 								profile={profile} presentProfileId={presentProfileId} averageRating = {averageRating}  />
@@ -125,6 +126,7 @@ export default connect(mapStateToProps, {
 	onChangeSkill,
 	onChangeEducation,
 	updateProfile,
+	updateProfilePicture,
 	showMessages: ChatActions.showMessages
 })(ProfileTutor);
 
