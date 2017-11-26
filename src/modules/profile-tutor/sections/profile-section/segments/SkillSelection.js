@@ -1,8 +1,10 @@
 
+
+
 import React from 'react'
 import {Grid, Dropdown, Icon, Label} from 'semantic-ui-react';
 
-class SkillsSection extends React.Component{
+class SkillsSelection extends React.Component{
 
     state={
         skills:[],
@@ -15,6 +17,7 @@ class SkillsSection extends React.Component{
             // this.setState({
             //     skills: res.data.skills
             // })
+
             this.setState({ 
                 skills: seededSkills.map(x => {
                     return { key:x.id, text:capitalize(x.name), value:x.id }
@@ -34,7 +37,9 @@ class SkillsSection extends React.Component{
     handleChange = (e, { value }) => {
         const skillsNormalized = value.map(x => {
             const skillObject = this.state.skills.filter(y => y.key === x)[0]
-            return skillObject
+            console.log(skillObject)
+            return { id: skillObject.key , name: skillObject.text }
+            // return skillObject
         })
         this.props.onChangeSkills(skillsNormalized)
     }
@@ -46,20 +51,14 @@ class SkillsSection extends React.Component{
       
     render(){
         const { skills } = this.state
-        const { selectedSkills } = this.props
-        const displayableSkills = selectedSkills.map(x => x.key )
+        const { selectedSkills,mode } = this.props
+        const displayableSkills = selectedSkills.map(x => x.id)
+
+        console.log(selectedSkills)
 
         return (
-            <Grid stackable className='sign-up-about-education-body'>
-                <Grid.Row centered>
-                    <Grid.Column width={12} textAlign='left'>
-                        <p className='sign-up-label'>SKILLS YOU WANT TO TEACH</p>
-                    </Grid.Column>
-                </Grid.Row>
-                <Grid.Row centered>
-                    <Grid.Column width={12} textAlign='left'>
-                        {/* <Input name='skills' fluid placeholder='Start typing to search for a skill.' onKeyPress={this.addNewSkill}/> */}
                         <Dropdown
+                            disabled={mode!=='edit'}
                             options={skills}
                             placeholder='Start typing to search for a skill.'
                             search
@@ -72,16 +71,14 @@ class SkillsSection extends React.Component{
                             onChange={this.handleChange}
                             renderLabel={this.renderLabel}
                         />
-                    </Grid.Column>
-                </Grid.Row>
-            </Grid>
+                   
         );
     }
 
 }
 
 
-export default SkillsSection
+export default SkillsSelection
 
 function capitalize(str=''){
     if(!str) return

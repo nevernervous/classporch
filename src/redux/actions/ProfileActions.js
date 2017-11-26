@@ -127,13 +127,10 @@ export const onChangeEducation = (index, action, educationalAttributes, field, v
   }
 }
 
-export const onChangeSkill = (index, skillName, action, value, skills) => {
-  if (action === 'delete') {
-    const updatedSkills = skills.filter(skill => skill.name !== skillName)
-    return {
-      type: CHANGE_SKILLS,
-      payload: updatedSkills
-    }
+export const onChangeSkill = (editedSkills) => {
+  return{
+    type:CHANGE_SKILLS,
+    payload:editedSkills
   }
 }
 

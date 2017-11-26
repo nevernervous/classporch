@@ -115,33 +115,33 @@ const styles = {
     },
     segment:{
         backgroundColor:'#eee',
-        color:'#111',
+        color:'#555',
         height:45,
     }
 }
 
 const mapStateToProps = ({profileState}) => {
     let {reviews} = profileState
-    reviews = {
-        "0":{
-                "reviewer_name":"Phil Stevens",
-                "reviewer_profile_picture":faker.internet.avatar(),
-				"review":"mark is a good teacher.",
-				"rating": 3
-            },
-        "1":{
-                "reviewer_name":"Phil Stevens",
-                "reviewer_profile_picture":faker.internet.avatar(),
-				"review":"mark is a good teacher.",
-				"rating": 3
-            },
-        "2":{
-                "reviewer_name":"Phil Stevens",
-                "reviewer_profile_picture":faker.internet.avatar(),
-				"review":"mark is a good teacher.",
-				"rating": 3
-            }
-        }
+    // reviews = {
+    //     "0":{
+    //             "reviewer_name":"Phil Stevens",
+    //             "reviewer_profile_picture":faker.internet.avatar(),
+	// 			"review":"mark is a good teacher.",
+	// 			"rating": 3
+    //         },
+    //     "1":{
+    //             "reviewer_name":"Phil Stevens",
+    //             "reviewer_profile_picture":faker.internet.avatar(),
+	// 			"review":"mark is a good teacher.",
+	// 			"rating": 3
+    //         },
+    //     "2":{
+    //             "reviewer_name":"Phil Stevens",
+    //             "reviewer_profile_picture":faker.internet.avatar(),
+	// 			"review":"mark is a good teacher.",
+	// 			"rating": 3
+    //         }
+    //     }
     return  {reviews}
 }
 
