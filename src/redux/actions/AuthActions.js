@@ -1,6 +1,7 @@
 import {apiEndpoints} from '../../ApiEndpoints';
 import {history} from '../../redux/store';
 import axios from 'axios'
+import {deleteState} from '../localStorage';
 
 import {
   EMAIL_CHANGED,
@@ -117,7 +118,7 @@ export const signupUser = (parsedForm) => {
 }
 
 export const logoutUserRequested = () => {
-  // deleteState()
+  deleteState()
   return {
     type: LOGOUT_USER_SUCCESS,
     payload: ''

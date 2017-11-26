@@ -191,16 +191,18 @@ export const updateProfile = ({profile, userId, educationalAttributes, authToken
       console.log(authToken)
 
       let bodyObject = {
-        "role": profile.type,
-        "first_name": profile['full-name'].split(' ')[0],
-        "last_name": profile['full-name'].split(' ')[1],
-        "gender": profile.gender,
-        "birthday_date": profile['birthday date'],
-        "country": profile.country,
-        "city": profile.city,
-        "number": profile.phone,
-        "email": profile.email,
-        "skills": profile['skill-ids'],
+        "user":{
+          "role": profile.type,
+          "first_name": profile['full-name'].split(' ')[0],
+          "last_name": profile['full-name'].split(' ')[1],
+          "gender": profile.gender,
+          "birthday_date": profile['birthday date'],
+          "country": profile.country,
+          "city": profile.city,
+          "number": profile.phone,
+          "email": profile.email,
+          "skills": profile['skill-ids'],
+        },
         "educations_attributes": educationalAttributes,
       }
 
