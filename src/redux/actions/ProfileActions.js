@@ -63,52 +63,6 @@ export const profileRequested = (userId, authToken) => {
   }
 }
 
-// "user": {
-// "role": "tutor",
-// "first_name": "neeraj",
-// "last_name": "chandra",
-// "gender": "female",
-// "birthday_date": "19/10/1992",
-// "country": "US",
-// "city": "london",
-// "number": "8253667253",
-// "email": "saurav@ss.com",
-// "password": "12345678",
-// "password_confirmation": "12345678",
-// "skills":[
-//     {
-//         "id": 45,
-//         "name": "javascript"
-//     },
-//     {
-//         "id": 45,
-//         "name": "javascript"
-//     },
-//     {
-//         "id": 45,
-//         "name": "javascript"
-//     }],
-// "provider": "facebook",
-// "educations_attributes": {
-//     "0":{
-//         "id": 75,
-//             "start_education": "11/09/1990",
-//             "finish_education": "10/01/2016",
-//             "university_name": "The school"
-//         },
-//     "1":{
-//         "start_education": "16/05/1992",
-//         "finish_education": "16/05/1996",
-//         "university_name": "The second School"
-//     }
-// },
-// "tutor_experience_attributes":{
-//     "id": 42,
-//     "rate": 20,
-//     "experience": 5,
-//     "description": ""
-// }
-// }
 
 export const toggleProfileMode = (mode) => {
   return {
