@@ -91,6 +91,10 @@ function capitalize(str=''){
     }
 
 let seededSkills = [
+  {
+    "id":1,
+    "name":"RoR"
+  },
     {
         "id": 2,
         "name": "ruby on rails",
