@@ -4,6 +4,7 @@ import axios from 'axios'
 import {deleteState} from '../localStorage';
 
 import {
+  STATE_PERSISTED,
   EMAIL_CHANGED,
   EMAIL_SUBMITTED,
   PASSWORD_CHANGED,
@@ -44,6 +45,12 @@ export const passwordDialogClosed = (boolValue) => {
     payload: boolValue
   }
 }
+
+export const statePersisted = () => {
+  return {
+    type: STATE_PERSISTED
+  }
+};
 
 export const loginUser = (userReqObject) => {
   console.log(JSON.stringify(userReqObject, null, 4))

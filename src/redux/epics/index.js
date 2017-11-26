@@ -3,6 +3,7 @@ import {getUnreadMessageCount} from './DashboardEpics';
 import {loadChats} from './ChatEpics';
 import {loadMessages, sendMessage, findChat, uploadFile, shareFile} from './MessagingEpics';
 import {uploadFileWithProgress} from './ProfileEpics';
+import {persistState} from "./PersistenceEpic";
 
 export default combineEpics(
   loadChats,
@@ -12,5 +13,6 @@ export default combineEpics(
   findChat,
   getUnreadMessageCount,
   uploadFile,
-  shareFile
+  shareFile,
+  persistState
 );
