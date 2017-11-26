@@ -47,7 +47,10 @@ const enhancers = compose(
 const persistedState = loadState();
 
 const store = createStore(
-  rootReducer,
+  combineReducers({
+    ...reducers,
+    router:routerReducer
+  }),
   persistedState,
   enhancers
 );
