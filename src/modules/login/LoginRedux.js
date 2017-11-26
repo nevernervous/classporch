@@ -103,7 +103,7 @@ class LoginRedux extends Component {
   }
 
   render() {
-    console.log(this.props.errorMessage)
+    // console.log(this.props.errorMessage)
     const {email, password, loading, error, errorMessage} = this.props;
     const errorFlag = error === '' ? false : true;
     return (

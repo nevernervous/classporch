@@ -21,7 +21,6 @@ class NotificationsSection extends React.Component{
 
 	componentWillReceiveProps(nextProps){
 		if(this.props.notifications !== nextProps.notifications){
-			console.log('refreshed')
 			this.setState({
 				allNotifications:nextProps.notifications,
 				displayNotifications: nextProps.notifications.slice(0,3)
@@ -33,11 +32,7 @@ class NotificationsSection extends React.Component{
 	
 	populateNotificationStrips = (notifications) => {
 		const {userId, firstName, lastName, role, authToken} = this.props
-		
-		console.log(authToken)
-		console.log(userId)		
 		return notifications.map( (notification,i) => {
-			console.log(notification)
 			return <NotificationStrip notification = {notification} authToken={authToken} userId={userId} key = {i}
 										firstName={firstName} lastName={lastName} role={role} />
 		})
@@ -76,8 +71,6 @@ class NotificationsSection extends React.Component{
 
 	render(){
 		const { loading, notificationsNextUrl, userId, authToken } = this.props
-		console.log(userId)
-		console.log(authToken)
 		const { displayNotifications, allNotifications } = this.state
 		return (
 			<Grid className='tutor-notification-section'>

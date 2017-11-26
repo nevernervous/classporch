@@ -38,7 +38,7 @@ class DashboardTutor extends Component {
       <div>
         <StatsSection unreadMessageCount={unreadMessageCount}/>
         <NotificationsSection/>
-        {/* <WeekScheduleSection/> */}
+        <WeekScheduleSection/>
         <Notification
           isActive={this.state.isNotificationActive}
           message="Notification"

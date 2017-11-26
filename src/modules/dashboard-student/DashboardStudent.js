@@ -18,6 +18,12 @@ class DashboardStudent extends React.Component {
     const {userId, authToken} = this.props;
     this.props.getDashboard({userId, authToken});
     this.props.getUnreadMessagesCount();
+    this.props.toggleSearchMode('normal')
+    
+  }
+
+  componentDidUnmount(){
+    this.props.toggleSearchMode('normal')    
   }
 
   componentWillReceiveProps(nextProps) {
