@@ -5,12 +5,10 @@ import './styles.css';
 
 export default class EducationSection extends React.Component {
 
-    getInitialState = () => {
-        return({
-            startDate: moment().subtract(4, 'years').format('D-mm-Y'),
-            endDate: moment().format('D-mm-Y'),
-            numberOfEducationFields: 1
-        });
+    state = {
+        startDate: moment().subtract(4, 'years').format('D-mm-Y'),
+        endDate: moment().format('D-mm-Y'),
+        numberOfEducationFields: 1
     }
 
     onFocusChange = (event, data) => {

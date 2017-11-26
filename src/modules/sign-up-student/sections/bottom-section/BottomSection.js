@@ -22,7 +22,7 @@ export default class BottomSection extends React.Component {
     }
   };
 
-  agreedToTerms = function (e) {
+  agreedToTerms = (e) => {
     var {isAgreedToTerms} = this.state;
     this.setState({
       isAgreedToTerms: !isAgreedToTerms

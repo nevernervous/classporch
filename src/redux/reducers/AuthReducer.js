@@ -38,8 +38,6 @@ const INITIAL_STATE = { email: '',
 					 };
 
 export default (state = INITIAL_STATE, action) => {
-	console.log('dkjjjjjjjjjjjjj============================================')
-	console.log(action)
 	switch(action.type){
 
 		case EMAIL_CHANGED:
