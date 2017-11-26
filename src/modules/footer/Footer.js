@@ -13,28 +13,30 @@ import {connect} from 'react-redux'
 
 class Footer extends Component {
 
-  state = {}
-
   handleItemClick = (e, {name}) => {
+    console.log(name);
     switch (name) {
-      case 'priv-policy': {
-        return history.push('/privacy-policy')
-      }
-      case 'terms-of-service': {
-        const {role} = this.props
-        return role === 'tutor' ? history.push('/terms-of-service/tutor') : history.push('/terms-of-service/student')
-      }
+      case 'privacy-policy':
+        history.push('/privacy-policy');
+        break;
+      case 'terms-of-service':
+        history.push('/terms-of-service');
+        break;
+      case 'contact-us':
+        history.push('/contact');
+        break;
       default:
-        return
+        console.error('Pages not available');
+        break;
     }
-  }
+  };
 
   render() {
     return (
       <div>
         <div className='footer-background'>
           <Grid>
-            <Grid.Row></Grid.Row>
+            <Grid.Row/>
             <Grid.Row centered>
               <Grid.Column width={1}>
               </Grid.Column>
@@ -70,7 +72,7 @@ class Footer extends Component {
               <Grid.Column width={1}>
               </Grid.Column>
             </Grid.Row>
-            <Grid.Row></Grid.Row>
+            <Grid.Row/>
           </Grid>
         </div>
         <div className='footer-bottom-background'>
@@ -86,7 +88,7 @@ class Footer extends Component {
                   <Menu.Item
                     className='footer-button'
                     onClick={this.handleItemClick}
-                    name='priv-policy'>
+                    name='privacy-policy'>
                     Privacy Policy
                   </Menu.Item>
                   <Menu.Item
@@ -104,14 +106,14 @@ class Footer extends Component {
                   <Menu.Item
                     className='footer-button'
                     onClick={this.handleItemClick}
-                    name='contact-us'>
+                    name='pricing'>
                     Pricing
                   </Menu.Item>
                   <Menu.Menu position='right'>
                     <Menu.Item
                       className='footer-button-back-to-top'
                       onClick={this.handleItemClick}
-                      name='contact-us'>
+                      name='back-to-top'>
                       Back to top
                     </Menu.Item>
                   </Menu.Menu>
@@ -127,8 +129,8 @@ class Footer extends Component {
 
 
 const mapStateToProps = ({auth}) => {
-  const {role} = auth
+  const {role} = auth;
   return {role}
-}
+};
 
 export default connect(mapStateToProps, {})(Footer)

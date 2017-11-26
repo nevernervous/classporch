@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3759a9a3-923b-4361-83a0-3877315bb0cd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/footer-min/FooterMin.js" afterPath="$PROJECT_DIR$/src/modules/footer-min/FooterMin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/navbar/Navbar.js" afterPath="$PROJECT_DIR$/src/modules/navbar/Navbar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/terms-of-service/TosTutor.js" afterPath="$PROJECT_DIR$/src/modules/terms-of-service/TosTutor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/footer/Footer.js" afterPath="$PROJECT_DIR$/src/modules/footer/Footer.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -55,14 +53,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FooterMin.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FooterMin.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modules/footer-min/FooterMin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="24" column="16" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+            <state relative-caret-position="179">
+              <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="30" selection-end-column="4" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Footer.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/modules/footer/Footer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,6 +82,7 @@
               <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
               <folding>
                 <element signature="e#0#77#0" expanded="true" />
+                <marker date="1511717742092" expanded="true" signature="1326:1373" ph="{&quot;router&quot;: routerReducer...}" />
               </folding>
             </state>
           </provider>
@@ -176,7 +185,6 @@
         <option value="$PROJECT_DIR$/src/modules/dashboard-student/sections/suggested-tutors-section/ProfileTile/ProfileTile.js" />
         <option value="$PROJECT_DIR$/src/modules/dashboard-tutor/sections/notifications-section/notification-strip/NotificationStrip.js" />
         <option value="$PROJECT_DIR$/src/modules/dashboard-tutor/sections/stats-section/StatsSection.js" />
-        <option value="$PROJECT_DIR$/src/modules/footer/Footer.js" />
         <option value="$PROJECT_DIR$/src/modules/login/Login.js" />
         <option value="$PROJECT_DIR$/src/modules/login/LoginRedux.js" />
         <option value="$PROJECT_DIR$/src/modules/navbar-user/NavbarUser.js" />
@@ -212,6 +220,7 @@
         <option value="$PROJECT_DIR$/src/modules/navbar/Navbar.js" />
         <option value="$PROJECT_DIR$/src/modules/terms-of-service/TosTutor.js" />
         <option value="$PROJECT_DIR$/src/modules/footer-min/FooterMin.js" />
+        <option value="$PROJECT_DIR$/src/modules/footer/Footer.js" />
       </list>
     </option>
   </component>
@@ -352,12 +361,12 @@
       <option name="presentableId" value="Default" />
       <updated>1511472396900</updated>
       <workItem from="1511472399355" duration="4804000" />
-      <workItem from="1511686178288" duration="10356000" />
+      <workItem from="1511686178288" duration="10841000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15160000" />
+    <option name="totallyTimeSpent" value="15645000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="-164" width="1920" height="1080" extended-state="0" />
@@ -395,16 +404,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/modules/footer/Footer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/dashboard-tutor/sections/stats-section/StatsSection.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -724,9 +723,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -784,6 +781,7 @@
           <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
           <folding>
             <element signature="e#0#77#0" expanded="true" />
+            <marker date="1511717742092" expanded="true" signature="1326:1373" ph="{&quot;router&quot;: routerReducer...}" />
           </folding>
         </state>
       </provider>
@@ -849,11 +847,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/footer-min/FooterMin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="24" column="16" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        <state relative-caret-position="179">
+          <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="30" selection-end-column="4" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/footer/Footer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
