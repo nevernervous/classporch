@@ -6,7 +6,6 @@ class SkillsSection extends React.Component{
 
     state={
         skills:[],
-        selectedSkills:[]
     }
 
     componentDidMount = async() => {
@@ -32,7 +31,13 @@ class SkillsSection extends React.Component{
         })
     }
 
-    handleChange = (e, { value }) => this.setState({ selectedSkills: value })
+    handleChange = (e, { value }) => {
+        const skillsNormalized = value.map(x => {
+            const skillObject = this.state.skills.filter(y => y.key === x)[0]
+            return skillObject
+        })
+        this.props.onChangeSkills(skillsNormalized)
+    }
     
     renderLabel = label => ({
         color: 'yellow',
@@ -40,7 +45,9 @@ class SkillsSection extends React.Component{
     })
       
     render(){
-        const { skills, selectedSkills } = this.state
+        const { skills } = this.state
+        const { selectedSkills } = this.props
+        const displayableSkills = selectedSkills.map(x => x.key )
 
         return (
             <Grid stackable className='sign-up-about-education-body'>
@@ -60,7 +67,7 @@ class SkillsSection extends React.Component{
                             fluid
                             multiple
                             allowAdditions
-                            value={selectedSkills}
+                            value={displayableSkills}
                             onAddItem={this.handleAddition}
                             onChange={this.handleChange}
                             renderLabel={this.renderLabel}

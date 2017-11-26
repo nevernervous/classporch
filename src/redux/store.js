@@ -3,7 +3,7 @@ import createHistory from 'history/createBrowserHistory';
 import {routerMiddleware, routerReducer} from 'react-router-redux';
 import logger from 'redux-logger';
 import ReduxThunk from 'redux-thunk'
-import reducers from './reducers';
+import rootReducer from './reducers';
 import {loadState, saveState} from './localStorage';
 import throttle from 'lodash/throttle';
 import {createEpicMiddleware} from 'redux-observable';
@@ -48,10 +48,7 @@ const enhancers = compose(
 const persistedState = loadState();
 
 const store = createStore(
-  combineReducers({
-    ...reducers,
-    router: routerReducer
-  }),
+  rootReducer,
   persistedState,
   enhancers
 );

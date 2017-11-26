@@ -7,7 +7,21 @@ import { signupUser } from '../../redux/actions';
 
 
 class SignUpTutor extends React.Component {
+
+    state = {
+        selectedSkills:[]
+    }
+
+    onChangeSkills = (selectedSkills) => {
+        this.setState({ selectedSkills })
+    }
+
     onFormSubmitted = (event, {formData}) => {
+
+        const formSkills = this.state.selectedSkills.map(x => {
+            return { id: x.key, name: x.text }
+        })
+
         //Modify form data for actual use:
         let parsedForm = {};
         parsedForm['user'] = {};
@@ -27,7 +41,7 @@ class SignUpTutor extends React.Component {
         parsedForm['user']['country'] = formData['country'];
         parsedForm['user']['city'] = formData['city'];
         parsedForm['user']['number'] = formData['mobile'];
-        parsedForm['user']['skill_ids'] = [1,3,4,5]
+        parsedForm['user']['skills'] = formSkills
         parsedForm['user']['provider'] = this.props.errorObject.provider || 'email'
 
         parsedForm['user']['educations_attributes']['0']['start_education'] = formData['start_education'];
@@ -40,7 +54,6 @@ class SignUpTutor extends React.Component {
 
         parsedForm['auth']['access_token'] = this.props.errorObject.access_token || null
         parsedForm['auth']['secret'] = this.props.errorObject.secret || null
-
 
         event.preventDefault();
 
@@ -56,7 +69,7 @@ class SignUpTutor extends React.Component {
                     <AboutSection/>
                     <EducationSection/>
                     <ContactSection/>
-                    <SkillsSection/>
+                    <SkillsSection onChangeSkills={this.onChangeSkills} selectedSkills={this.state.selectedSkills} />
                     <HourlyRateSection/>
                     <BottomSection/>
                 </Form>
