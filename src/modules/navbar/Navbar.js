@@ -17,20 +17,16 @@ class Navbar extends Component {
 
   constructor(props) {
     super(props);
-    console.log(props);
     this.handleItemClick = this.handleItemClick.bind(this);
     this.capitalize = this.capitalize.bind(this);
     this.getLoggedInMenuItems = this.getLoggedInMenuItems.bind(this);
     this.getItems = this.getItems.bind(this);
     this.onSearchWordChange = this.onSearchWordChange.bind(this);
     this.onSearch = this.onSearch.bind(this);
-    this.getSearchBar = this.getSearchBar.bind(this);
     this.isShowSearchBar = this.isShowSearchBar.bind(this);
   }
 
-  componentWillMount() {
-    this.setState({activeItem: ''})
-  }
+  componentWillMount() { this.setState({activeItem: ''}) }
 
   handleItemClick = (e, {name}) => {
     this.setState({activeItem: name});
@@ -159,7 +155,26 @@ class Navbar extends Component {
   }
 
   getItems() {
-    let menuItems = items.map((item, i) => {
+    const items = [
+      {
+        key: 'sign-in',
+        name: 'sign-in',
+        buttonTitle: 'SIGN IN'
+      }, {
+        key: 'pricing',
+        name: 'pricing',
+        buttonTitle: 'PRICING'
+      }, {
+        key: 'about-us',
+        name: 'about-us',
+        buttonTitle: 'ABOUT US'
+      }, {
+        key: 'contact-us',
+        name: 'contact-us',
+        buttonTitle: 'CONTACT US'
+      }
+    ];
+    let menuItems = items.map((item) => {
       return (
         <Menu.Item
           key={item.key}
@@ -170,7 +185,6 @@ class Navbar extends Component {
         </Menu.Item>
       );
     });
-
     return (<Menu.Menu position='right'> {menuItems} </Menu.Menu>)
   }
 
@@ -178,36 +192,28 @@ class Navbar extends Component {
     this.setState({searchWord: value})
   };
 
-  onSearch = (e) => {
+  onSearch = () => {
     this.props.toggleSearchMode({mode: 'search'})
     this.props.searchRequested(this.state.searchWord, this.props.authToken)
   };
-
-  getSearchBar() {
-    return (
-      <Input size='large' placeholder='Search for tutors,skills you want to learn...' className='search-input'
-             action={<Button type='submit' onClick={this.onSearch}> Search </Button>}
-             onChange={this.onSearchWordChange}/>
-    )
-  }
 
   isShowSearchBar = () => {
     if (this.props.role !== 'student') {
       return null
     }
     if (window.location.pathname === '/search' || window.location.pathname === '/dashboard/student') {
-      return this.getSearchBar()
-    } else {
-      return null
+      return <Input size='large' placeholder='Search for tutors,skills you want to learn...' className='search-input'
+                    action={<Button type='submit' onClick={this.onSearch}> Search </Button>}
+                    onChange={this.onSearchWordChange}/>
     }
+    return null
   };
 
   render() {
     const {authToken, role} = this.props;
-    let menuRight = authToken ? this.getLoggedInMenuItems() : this.getItems();
+    let menuRight = (authToken && window.location.pathname !== '/login' && window.location.pathname !== '/' && !window.location.pathname.includes('sign-up')) ? this.getLoggedInMenuItems() : this.getItems();
     let dashboardLink = role === "student" ? '/dashboard/student' : '/dashboard/tutor';
     let isDashboardAccessible = authToken ? dashboardLink : '/';
-    let isShowSearchBar = window.location.pathname === '/search' ? this.getSearchBar() : null;
 
     return (
       <Menu stackable borderless className='menubar'>
@@ -226,10 +232,8 @@ class Navbar extends Component {
 const mapStateToProps = ({auth, dashboard}) => {
   const {authToken, id: userId, role, firstName, lastName, loggedIn} = auth;
   const {profile} = dashboard;
-
   return {authToken, userId, role, firstName, lastName, loggedIn, profile}
 };
-
 
 export default connect(mapStateToProps, {
   logoutUserRequested,
@@ -237,23 +241,3 @@ export default connect(mapStateToProps, {
   setPresentProfile,
   toggleSearchMode
 })(Navbar);
-
-const items = [
-  {
-    key: 'sign-in',
-    name: 'sign-in',
-    buttonTitle: 'SIGN IN'
-  }, {
-    key: 'pricing',
-    name: 'pricing',
-    buttonTitle: 'PRICING'
-  }, {
-    key: 'about-us',
-    name: 'about-us',
-    buttonTitle: 'ABOUT US'
-  }, {
-    key: 'contact-us',
-    name: 'contact-us',
-    buttonTitle: 'CONTACT US'
-  }
-];
