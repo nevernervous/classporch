@@ -2,7 +2,6 @@ import React from 'react';
 import {Grid, Input, Radio, Label} from 'semantic-ui-react';
 import moment from 'moment';
 import './styles.css';
-import 'react-datepicker/dist/react-datepicker.css';
 
 export default class AboutSection extends React.Component {
 
@@ -41,7 +40,7 @@ export default class AboutSection extends React.Component {
             default:
                 return console.log(name+' doesnt match any case')
         }
-    }
+    };
 
     // changeDate: function (value) {
     //     this.setState({startDate: value});
@@ -50,7 +49,7 @@ export default class AboutSection extends React.Component {
     changeGender = function (e,{value}) {
         // console.log( JSON.stringify(this.state,null,4) )
         this.setState({gender: value})
-    }
+    };
 
     // checkMatch: function(){
     //     const { password, password_confirm } = this.state
@@ -83,7 +82,7 @@ export default class AboutSection extends React.Component {
         }else{
             event.target.type = 'text'
         }
-    }
+    };
 
     // passwordError : function(){
     //     if(this.state.isPasswordMatch === false){

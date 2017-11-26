@@ -4,7 +4,6 @@ import {ConnectedRouter} from 'react-router-redux';
 import {history} from './redux/store';
 import {
   Home,
-  Login,
   LoginRedux,
   SignUpMethods,
   SignUpTutor,
@@ -32,10 +31,11 @@ const Routes = () => {
     <ConnectedRouter history={history}>
       <Switch>
         <Route exact path={'/'} component={Home}/>
-        <Route exact path={'/chats'} component={Messaging}/>
+        <Route exact path={'/chats'} component={Chat}/>
+        <Route exact path={'/messages'} component={Messaging}/>
         <Route exact path='/contact' component={ContactUs}/>
         <Route exact path='/privacy-policy' component={PrivacyPolicy}/>
-        <Route exact path='login' component={LoginRedux}/>
+        <Route exact path='/login' component={LoginRedux}/>
         <Route exact path='/search' component={SearchResults}/>
         <Route exact path='/add-credits' component={AddCredits}/>
         <Route exact path='/link-account' component={LinkAccount}/>
@@ -51,6 +51,7 @@ const Routes = () => {
         <Route path={'/sign-up'} component={SignUpMethods}/>
         <Route path={'/sign-up/tutor'} component={SignUpTutor}/>
         <Route path={'/sign-up/student'} component={SignUpStudent}/>
+        <Redirect to={'/'}/>
       </Switch>
     </ConnectedRouter>
   );
