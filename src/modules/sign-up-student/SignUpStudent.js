@@ -17,7 +17,7 @@ class SignUpStudent extends React.Component{
     }
 
 
-    onFormSubmitted(event, {formData}){
+    onFormSubmitted = (event, {formData}) => {
 
         const formSkills = this.state.selectedSkills.map(x => {
             return { id: x.key, name: x.text }
