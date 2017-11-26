@@ -1,0 +1,27 @@
+.title{
+    margin-top: 10px;
+}
+
+.section-one{
+    margin: 180px 0!important;
+}
+
+.home-title{
+    font-size: 64px;
+    font-weight: 200;
+    font-family: 'Dancing Script', cursive;
+    color: #777
+}
+
+.home-title-bold{
+    font-size: 64px;
+    font-weight: 300;
+    font-family: 'Open Sans';
+}
+
+.home-subtitle{
+    font-size: 18px;
+    font-weight: 200;
+    color: #666;
+    font-family: 'Open Sans' , 'sans-serif';
+}

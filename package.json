@@ -1,0 +1,49 @@
+{
+  "name": "classporch",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "https://classporch.herokuapp.com/api/v1/",
+  "devDependencies": {
+    "react-scripts": "1.0.17",
+    "redux-logger": "2.10.2"
+  },
+  "dependencies": {
+    "axios": "0.16.2",
+    "chart.js": "2.7.1",
+    "faker": "4.1.0",
+    "firebase": "4.6.2",
+    "history": "4.7.2",
+    "immutable": "3.8.2",
+    "lodash": "4.17.4",
+    "moment": "2.19.2",
+    "nuka-carousel": "3.0.0",
+    "querystring": "0.2.0",
+    "react": "16.1.1",
+    "react-addons-shallow-compare": "15.6.2",
+    "react-dates": "12.7.1",
+    "react-dom": "16.1.1",
+    "react-facebook-login": "3.7.2",
+    "react-linkedin-login": "1.0.3",
+    "react-notification": "6.8.2",
+    "react-redux": "5.0.6",
+    "react-router": "4.2.0",
+    "react-router-dom": "4.2.2",
+    "react-router-redux": "^5.0.0-alpha.8",
+    "react-stars": "2.2.5",
+    "react-stripe-elements": "1.2.1",
+    "react-timekeeper": "1.0.4",
+    "redux": "3.7.2",
+    "redux-observable": "0.17.0",
+    "redux-thunk": "2.2.0",
+    "rxjs": "5.5.2",
+    "semantic-ui-react": "0.76.0",
+    "uuid": "3.1.0",
+    "victory": "0.21.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

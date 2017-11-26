@@ -1,0 +1,26 @@
+
+
+.profile-picture-form ::placeholder {
+	color: #fff !important;
+}	 
+
+.image-input{
+	height: 40px;
+	width:220px;
+	border-radius: 5px;
+	box-shadow: none;
+	border:none;
+	cursor: pointer;
+	background-color:#FBBD08 !important;
+	padding:0;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+	color:#fff;
+	text-align: center;
+}
+
+.profile-picture-form{
+	height: 40px !important;
+	border:none;
+}

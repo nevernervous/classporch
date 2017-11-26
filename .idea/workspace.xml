@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3759a9a3-923b-4361-83a0-3877315bb0cd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/dashboard/messageIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/dashboard/messageIconUnread.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/dashboard/profileIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/login/compass.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/logo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/logo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/section3/section3_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/section3/section3_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/section3/section3_3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/section3/section3_4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/classporch.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/manifest.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Api.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ApiEndpoints.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/App.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/App.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/App.test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Routes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/dashboard/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/helpers/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/helpers/rxFirebase.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/logo.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/menu/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/add-credits/AddCredits.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/add-credits/CheckoutForm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/add-credits/checkout-sections/AddressSection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/add-credits/checkout-sections/CardForm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/add-credits/checkout-sections/PaymentRequestButton.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/add-credits/checkout-sections/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/add-credits/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/add-credits/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/chat/Chat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/chat/chat-strip/ChatRow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/chat/chat-strip/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/chat/chat-strip/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/chat/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/chat/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/contact-us/ContactUs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/contact-us/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-student/DashboardStudent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-student/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-student/sections/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-student/sections/notifications-section/NotificationsSection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-student/sections/notifications-section/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-student/sections/notifications-section/notification-strip/NotificationStrip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-student/sections/notifications-section/notification-strip/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-student/sections/notifications-section/notification-strip/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-student/sections/notifications-section/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-student/sections/stats-section/StatsSection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-student/sections/stats-section/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-student/sections/stats-section/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-student/sections/suggested-tutors-section/ProfileTile/ProfileTile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-student/sections/suggested-tutors-section/ProfileTile/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-student/sections/suggested-tutors-section/ProfileTile/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-student/sections/suggested-tutors-section/SuggestedTutors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-student/sections/suggested-tutors-section/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-student/sections/suggested-tutors-section/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-tutor/DashboardTutor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-tutor/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-tutor/sections/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-tutor/sections/notifications-section/NotificationsSection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-tutor/sections/notifications-section/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-tutor/sections/notifications-section/notification-strip/NotificationStrip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-tutor/sections/notifications-section/notification-strip/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-tutor/sections/notifications-section/notification-strip/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-tutor/sections/notifications-section/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-tutor/sections/stats-section/StatsSection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-tutor/sections/stats-section/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-tutor/sections/stats-section/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-tutor/sections/week-schedule-section/WeekScheduleSection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-tutor/sections/week-schedule-section/charts/AfternoonSchedule.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-tutor/sections/week-schedule-section/charts/EveningSchedule.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-tutor/sections/week-schedule-section/charts/MorningSchedule.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-tutor/sections/week-schedule-section/charts/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-tutor/sections/week-schedule-section/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/dashboard-tutor/sections/week-schedule-section/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/footer-min/FooterMin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/footer-min/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/footer-min/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/footer/Footer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/footer/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/footer/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/home/Home.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/home/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/home/sections/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/home/sections/section1/Section1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/home/sections/section1/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/home/sections/section1/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/home/sections/section2/Section2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/home/sections/section2/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/home/sections/section2/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/home/sections/section3/Section3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/home/sections/section3/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/home/sections/section3/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/home/sections/section4/Section4.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/home/sections/section4/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/home/sections/section4/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/home/sections/section5/Section5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/home/sections/section5/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/home/sections/section5/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/home/sections/section5/testimonial/Testimonial.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/home/sections/section5/testimonial/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/home/sections/section5/testimonial/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/home/sections/section6/Section6.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/home/sections/section6/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/home/sections/section6/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/home/sections/section7/Section7.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/home/sections/section7/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/link-account/LinkAccount.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/link-account/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/link-account/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/login/FacebookLogin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/login/LinkedinLogin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/login/Login.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/login/LoginRedux.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/login/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/login/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/messaging/Messaging.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/messaging/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/messaging/messageRows/OtherMessage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/messaging/messageRows/OwnMessage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/messaging/messageRows/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/messaging/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/navbar-user/NavbarUser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/navbar-user/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/navbar-user/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/navbar/Navbar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/navbar/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/navbar/sections/SearchBar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/navbar/sections/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/navbar/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/previous-expenses/PreviousExpenses.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/previous-expenses/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/previous-expenses/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/privacy-policy/PrivacyPolicy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/privacy-policy/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-student/ProfileStudent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-student/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-student/sections/header-section/HeaderSection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-student/sections/header-section/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-student/sections/header-section/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-student/sections/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-student/sections/profile-section/ProfileSection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-student/sections/profile-section/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-student/sections/profile-section/segments/AboutSegment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-student/sections/profile-section/segments/ContactSegment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-student/sections/profile-section/segments/EducationSegment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-student/sections/profile-section/segments/SkillSegment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-student/sections/profile-section/segments/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-student/sections/profile-section/segments/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-student/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-tutor/ProfileTutor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-tutor/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-tutor/sections/header-section/HeaderSection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-tutor/sections/header-section/RequestSession.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-tutor/sections/header-section/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-tutor/sections/header-section/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-tutor/sections/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-tutor/sections/profile-section/ProfileSection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-tutor/sections/profile-section/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-tutor/sections/profile-section/segments/AboutSegment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-tutor/sections/profile-section/segments/ContactSegment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-tutor/sections/profile-section/segments/EducationSegment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-tutor/sections/profile-section/segments/RateSegment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-tutor/sections/profile-section/segments/SkillSegment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-tutor/sections/profile-section/segments/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-tutor/sections/rating-section/RatingSection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-tutor/sections/rating-section/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-tutor/sections/reviews-section/ReviewsSection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-tutor/sections/reviews-section/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/profile-tutor/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/request-money/RequestMoney.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/request-money/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/request-money/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/search/SearchResults.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/search/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/search/sections/SearchSection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/search/sections/SearchSectionDirect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/search/sections/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/search/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-methods/SignUpMethods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-methods/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-methods/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-student/SignUpStudent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-student/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-student/sections/about-section/AboutSection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-student/sections/about-section/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-student/sections/about-section/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-student/sections/bottom-section/BottomSection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-student/sections/bottom-section/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-student/sections/bottom-section/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-student/sections/contact-section/ContactSection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-student/sections/contact-section/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-student/sections/contact-section/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-student/sections/education-section/EducationSection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-student/sections/education-section/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-student/sections/education-section/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-student/sections/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-student/sections/skills-section/SkillsSection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-student/sections/skills-section/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-student/sections/skills-section/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-student/sections/top-section/TopSection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-student/sections/top-section/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-student/sections/top-section/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/SignUpTutor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/about-section/AboutSection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/about-section/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/about-section/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/bottom-section/BottomSection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/bottom-section/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/bottom-section/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/contact-section/ContactSection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/contact-section/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/contact-section/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/education-section/EducationSection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/education-section/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/education-section/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/hourly-rate-section/HourlyRateSection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/hourly-rate-section/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/hourly-rate-section/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/skills-section/SkillsSection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/skills-section/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/skills-section/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/top-section/TopSection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/top-section/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/top-section/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/terms-of-service/Tos.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/terms-of-service/TosStudent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/terms-of-service/TosTutor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/terms-of-service/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/terms-of-service/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/actions/AuthActions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/actions/ChatActions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/actions/DashboardActions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/actions/MessageActions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/actions/ProfileActions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/actions/SearchActions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/actions/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/actions/types.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/epics/ChatEpics.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/epics/DashboardEpics.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/epics/MessagingEpics.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/epics/ProfileEpics.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/epics/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/localStorage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/reducers/AuthReducer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/reducers/ChatReducer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/reducers/DashboardReducer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/reducers/MessageReducer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/reducers/ProfileReducer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/reducers/SearchReducer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/reducers/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/services/firebaseAuthService.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/services/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/services/profilePictureService.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/services/uploadFileService.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/store.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/registerServiceWorker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yarn.lock" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="735">
+              <caret line="49" column="1" lean-forward="false" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BottomSection.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/sign-up-student/sections/bottom-section/BottomSection.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="38" column="77" lean-forward="false" selection-start-line="38" selection-start-column="77" selection-end-line="38" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BottomSection.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/sections/bottom-section/BottomSection.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="58" lean-forward="false" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HourlyRateSection.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/sections/hourly-rate-section/HourlyRateSection.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SkillsSection.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/sections/skills-section/SkillsSection.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="825">
+              <caret line="57" column="3" lean-forward="false" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignUpStudent.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/modules/sign-up-student/SignUpStudent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="34" column="94" lean-forward="true" selection-start-line="34" selection-start-column="94" selection-end-line="34" selection-end-column="94" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EducationSection.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/sections/education-section/EducationSection.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-70">
+              <caret line="5" column="62" lean-forward="false" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EducationSection.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/sign-up-student/sections/education-section/EducationSection.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="900">
+              <caret line="60" column="19" lean-forward="false" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SkillsSection.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/sign-up-student/sections/skills-section/SkillsSection.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="14">
+              <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignUpTutor.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/SignUpTutor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>import {browserHistory} from 'react-router';</find>
+      <find>browserHistory.push</find>
+      <find>browserHistory</find>
+      <find>react-router';</find>
+      <find>DatePicker</find>
+      <find>React.crea</find>
+      <find>: function</find>
+      <find>:function</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>history.push</replace>
+      <replace>history</replace>
+      <replace>=</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/redux/reducers/index.js" />
+        <option value="$PROJECT_DIR$/src/redux/store.js" />
+        <option value="$PROJECT_DIR$/src/modules/dashboard-student/sections/notifications-section/notification-strip/NotificationStrip.js" />
+        <option value="$PROJECT_DIR$/src/modules/dashboard-student/sections/stats-section/StatsSection.js" />
+        <option value="$PROJECT_DIR$/src/modules/dashboard-student/sections/suggested-tutors-section/ProfileTile/ProfileTile.js" />
+        <option value="$PROJECT_DIR$/src/modules/dashboard-tutor/sections/notifications-section/notification-strip/NotificationStrip.js" />
+        <option value="$PROJECT_DIR$/src/modules/dashboard-tutor/sections/stats-section/StatsSection.js" />
+        <option value="$PROJECT_DIR$/src/modules/footer/Footer.js" />
+        <option value="$PROJECT_DIR$/src/modules/login/Login.js" />
+        <option value="$PROJECT_DIR$/src/modules/login/LoginRedux.js" />
+        <option value="$PROJECT_DIR$/src/modules/navbar-user/NavbarUser.js" />
+        <option value="$PROJECT_DIR$/src/modules/profile-tutor/sections/header-section/HeaderSection.js" />
+        <option value="$PROJECT_DIR$/src/modules/profile-tutor/sections/header-section/RequestSession.js" />
+        <option value="$PROJECT_DIR$/src/modules/search/sections/SearchSection.js" />
+        <option value="$PROJECT_DIR$/src/modules/sign-up-methods/SignUpMethods.js" />
+        <option value="$PROJECT_DIR$/src/redux/actions/AuthActions.js" />
+        <option value="$PROJECT_DIR$/src/modules/navbar/Navbar.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/Routes.js" />
+        <option value="$PROJECT_DIR$/src/modules/chat/Chat.js" />
+        <option value="$PROJECT_DIR$/src/modules/messaging/Messaging.js" />
+        <option value="$PROJECT_DIR$/src/modules/home/sections/section5/Section5.js" />
+        <option value="$PROJECT_DIR$/src/modules/home/Home.js" />
+        <option value="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/about-section/AboutSection.js" />
+        <option value="$PROJECT_DIR$/src/modules/sign-up-student/sections/about-section/AboutSection.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/modules/sign-up-student/sections/bottom-section/BottomSection.js" />
+        <option value="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/bottom-section/BottomSection.js" />
+        <option value="$PROJECT_DIR$/src/modules/sign-up-student/sections/education-section/EducationSection.js" />
+        <option value="$PROJECT_DIR$/src/modules/sign-up-student/sections/skills-section/SkillsSection.js" />
+        <option value="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/education-section/EducationSection.js" />
+        <option value="$PROJECT_DIR$/src/modules/sign-up-tutor/SignUpTutor.js" />
+        <option value="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/hourly-rate-section/HourlyRateSection.js" />
+        <option value="$PROJECT_DIR$/src/modules/sign-up-tutor/sections/skills-section/SkillsSection.js" />
+        <option value="$PROJECT_DIR$/src/modules/sign-up-student/SignUpStudent.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="-1920" />
+    <option name="y" value="-164" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="classporch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="classporch" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="classporch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="classporch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="SearchEverywhereHistoryKey" value="Bottom&#9;null&#9;null&#10;About&#9;null&#9;null&#10;AboutSe&#9;null&#9;null&#10;Home.js&#9;FILE&#9;file:///Users/sourav/Documents/ReactProjects/classporch/src/modules/home/Home.js&#10;MenuChan&#9;null&#9;null&#10;Section5&#9;null&#9;null&#10;messa&#9;FILE&#9;file:///Users/sourav/Documents/ReactProjects/classporch/src/modules/messaging/Messaging.js&#10;Chat.js&#9;FILE&#9;file:///Users/sourav/Documents/ReactProjects/classporch/src/modules/chat/Chat.js&#10;Messaging&#9;null&#9;null&#10;AuthActions&#9;FILE&#9;file:///Users/sourav/Documents/ReactProjects/classporch/src/redux/actions/AuthActions.js&#10;reducers/inde&#9;FILE&#9;file:///Users/sourav/Documents/ReactProjects/classporch/src/redux/reducers/index.js&#10;store&#9;FILE&#9;file:///Users/sourav/Documents/ReactProjects/classporch/src/redux/store.js" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+    </configuration>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3759a9a3-923b-4361-83a0-3877315bb0cd" name="Default" comment="" />
+      <created>1511472396900</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1511472396900</updated>
+      <workItem from="1511472399355" duration="4804000" />
+      <workItem from="1511686178288" duration="1754000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6558000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1920" y="-164" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14744602" sideWeight="0.4948148" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14744602" sideWeight="0.5051852" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="1" lean-forward="false" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/sign-up-student/sections/bottom-section/BottomSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="77" lean-forward="false" selection-start-line="38" selection-start-column="77" selection-end-line="38" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/sections/hourly-rate-section/HourlyRateSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/sign-up-student/sections/about-section/AboutSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/sections/education-section/EducationSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="52" lean-forward="false" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/sign-up-student/sections/education-section/EducationSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="52" lean-forward="false" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/sections/about-section/AboutSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/menu/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/home/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/sections/bottom-section/BottomSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/localStorage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/dashboard-student/sections/notifications-section/notification-strip/NotificationStrip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="32" column="54" lean-forward="true" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/dashboard-student/sections/stats-section/StatsSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="48" lean-forward="false" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/footer/Footer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/dashboard-tutor/sections/stats-section/StatsSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="48" lean-forward="false" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/dashboard-tutor/sections/notifications-section/notification-strip/NotificationStrip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="51" lean-forward="false" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/dashboard-student/sections/suggested-tutors-section/ProfileTile/ProfileTile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-973">
+          <caret line="4" column="50" lean-forward="false" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/login/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/login/LoginRedux.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/navbar-user/NavbarUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/profile-tutor/sections/header-section/HeaderSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-172">
+          <caret line="2" column="48" lean-forward="false" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/profile-tutor/sections/header-section/RequestSession.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/search/sections/SearchSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/sign-up-methods/SignUpMethods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/actions/AuthActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#48#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/actions/DashboardActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="38" lean-forward="true" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/navbar/Navbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="15" lean-forward="false" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="10" lean-forward="false" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/chat/Chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/messaging/Messaging.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="34" column="8" lean-forward="false" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/home/sections/section5/Section5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="10" lean-forward="false" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/menu/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/home/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/sections/about-section/AboutSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/sign-up-student/sections/about-section/AboutSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="1" lean-forward="false" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/sign-up-student/sections/bottom-section/BottomSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="38" column="77" lean-forward="false" selection-start-line="38" selection-start-column="77" selection-end-line="38" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/sections/bottom-section/BottomSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="58" lean-forward="false" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/sign-up-student/sections/education-section/EducationSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="19" lean-forward="false" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/sign-up-student/sections/skills-section/SkillsSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/sections/education-section/EducationSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-70">
+          <caret line="5" column="62" lean-forward="false" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/SignUpTutor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/sections/hourly-rate-section/HourlyRateSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/sign-up-tutor/sections/skills-section/SkillsSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="57" column="3" lean-forward="false" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/sign-up-student/SignUpStudent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="34" column="94" lean-forward="true" selection-start-line="34" selection-start-column="94" selection-end-line="34" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,19 @@
+.sign-up-label{
+	font-weight: 600;
+	font-size: 15px;
+}
+
+.sign-up-about-section-body{
+	margin-top: 40px!important;
+	margin-bottom: 40px!important;
+}
+
+.datepicker-field{
+    border: 1px solid #DDD;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.space{
+	margin: 0 20px;
+}

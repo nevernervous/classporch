@@ -1,0 +1,35 @@
+.section4-background{
+    background-color: #0A1331!important;
+    padding: 0!important;
+}
+
+.section4-banner-image{
+    height: auto;
+}
+
+.how-it-works-section{
+    margin: 20px 0;
+}
+
+.section4-header{
+    font-family: 'Open Sans';
+    margin-top: 20px!important;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 0 0px 0 40px;
+    text-align: left;
+    color: white;
+}
+
+.section4-content{
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 13px;
+    margin-top: 24px;
+    text-align: left;
+    padding: 0 0px 0 40px;
+}
+
+.section4-find-more-button{
+    margin-left: 40px!important;
+}

@@ -1,0 +1,111 @@
+
+.cardify {
+	margin:0px 20px 0px 20px;
+	border:1px #aaa solid;
+	border-radius:10px;
+}
+
+.name {
+	padding-top:10px;
+	padding-bottom:5px;
+	font-size:1.1em;
+	font-weight:600;
+
+}
+.subjects {
+	font-size:0.9em;
+	color:#777;
+}
+
+.price {
+	padding:5px 0px 8px 0px;
+	
+}
+
+.card-style{
+	margin:0em 5em 3em 0em;
+	padding:1.5em;
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	border:1px solid #ccc;
+	border-radius: 0.4em;
+}
+
+.modal-layout {
+	display:flex !important;
+	justify-content:space-around !important;
+	align-items: center !important;
+}
+
+
+.request-form{
+	flex:9 1 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.request-section{
+	width: 100%;
+	flex:1 1 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin:10px 0px;
+}
+
+.field{
+	flex: 0 1 40% !important;
+	font-family: 'Open Sans' !important;
+	font-size: 16px;
+	margin-right: 20 !important;
+}
+
+.value{
+	flex:0 1 40% !important ;
+	line-height: 1.1 !important ;
+	border-radius: 0 !important;
+	display: flex !important;
+	width:30px !important;
+	font-size: 18px;
+	font-weight: 200;
+	font-family: 'Open Sans' !important;
+}
+
+
+.ui.input input{
+	line-height: 1.4 !important;
+	font-size: 18px;
+	font-family: 'Open Sans' !important;	
+	font-weight: 200;
+	width: 40% !important;
+}
+
+.DateInput{
+	width:180px !important;
+}
+
+.message-box{
+	height: 30px;
+	cursor: default;
+	background-color: #fff;
+	padding:0;
+	margin:0;
+	box-shadow: 0;
+	border-radius: 0;
+	border-width: 0px;
+	text-align: left;
+	padding-right: 150px;
+	color:rgb(202, 130, 14);
+}
+
+.message-box:hover{
+	background-color: transparent;
+	color:rgb(202, 130, 14);
+}
+
+.money-text{
+	font-size:1.1em;
+}
