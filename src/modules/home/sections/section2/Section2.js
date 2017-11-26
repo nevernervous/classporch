@@ -1,6 +1,11 @@
 import React from 'react';
 import {Grid, Image, Button} from 'semantic-ui-react';
+import {history} from "../../../../redux/store";
 import './styles.css'
+
+const showSignUp = () => {
+  history.push('/sign-up');
+};
 
 const Section2 = () => (
     <Grid>
@@ -16,12 +21,12 @@ With instructional videos, practice exercises, and a personalised learning dashb
 This platform offers you a smart way to progress your learning and most of all make you take pleasure in the learning itself. At ClassPorch, we implements modern techniques and methods, as well as individual approach, interactivity, flexible tutoring system and Whiteboard online teaching facilities to give you a memorable learning experience. 
                     </p>
                     <br/>
-                    <Button circular basic color='yellow' size='large'>FIND MORE</Button>
+                    <Button circular basic color='yellow' size='large' onClick={showSignUp}>FIND MORE</Button>
                 </div>
 
             </Grid.Column>
             <Grid.Column width={6} className='section-background' floated='left'>
-                <Image src='https://unsplash.it/800/?random' className='banner-image'/>
+                <Image src='https://unsplash.com/photos/9c_djeQTDyY/download' className='banner-image'/>
             </Grid.Column>
         </Grid.Row>
     </Grid>

@@ -58,6 +58,9 @@ class Navbar extends Component {
       case 'search':
         this.setState({activeItem: 'search'});
         return history.push('/search');
+      case 'contact-us':
+        history.push('/contact');
+        break;
       default:
         return history.push('/')
 
@@ -164,10 +167,6 @@ class Navbar extends Component {
         key: 'pricing',
         name: 'pricing',
         buttonTitle: 'PRICING'
-      }, {
-        key: 'about-us',
-        name: 'about-us',
-        buttonTitle: 'ABOUT US'
       }, {
         key: 'contact-us',
         name: 'contact-us',

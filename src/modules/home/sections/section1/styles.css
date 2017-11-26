@@ -10,7 +10,7 @@
     font-size: 64px;
     font-weight: 200;
     font-family: 'Dancing Script', cursive;
-    color: #777
+    color: #FFF
 }
 
 .home-title-bold{
@@ -22,6 +22,6 @@
 .home-subtitle{
     font-size: 18px;
     font-weight: 200;
-    color: #666;
+    color: #DEDEDE;
     font-family: 'Open Sans' , 'sans-serif';
 }
