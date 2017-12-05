@@ -22,7 +22,7 @@ class DashboardStudent extends React.Component {
     
   }
 
-  componentDidUnmount(){
+  componentWillUnmount(){
     this.props.toggleSearchMode('normal')    
   }
 
@@ -81,8 +81,7 @@ class DashboardStudent extends React.Component {
 const mapStateToProps = ({auth, dashboard,search}) => {
   const {id: userId, authToken} = auth;
   const {sessionRequestIndicator, displayMessage, unreadMessageCount} = dashboard;
-  const {searchMode} = search
-
+  const {searchMode} = search;
   return {userId, authToken, sessionRequestIndicator, displayMessage, unreadMessageCount,searchMode}
 };
 

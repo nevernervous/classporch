@@ -30,17 +30,17 @@ class SearchSectionDirect extends Component {
 	}
 	
 	proceed = (e) => {
-		const { authToken, result } = this.props
-		let { selectedSkillId,date,startTime,duration } = this.state
+		const { authToken, result } = this.props;
+		let { selectedSkillId,date,startTime,duration } = this.state;
 		if(selectedSkillId===null || date===null ){
 			return
 		}
-		this.close()
-		const tutorId = result.id
-		const skill = { "id":selectedSkillId, "name":"RoR" }
+		this.close();
+		const tutorId = result.id;
+		const skill = { "id":selectedSkillId, "name":"RoR" };
 		const {sessionStartTime, sessionEndTime} = this.getSessionStartTime(date,startTime,duration)
 		this.bookSession(tutorId,skill,authToken,sessionStartTime,sessionEndTime)
-	}
+	};
 
 	getSessionStartTime = (date,startTime,duration) => {
 		duration = parseInt(duration)
