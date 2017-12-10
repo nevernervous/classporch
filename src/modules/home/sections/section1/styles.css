@@ -3,25 +3,26 @@
 }
 
 .section-one{
-    margin: 180px 0!important;
+    height: 62vh;
+    margin-top: 30vh;
 }
 
 .home-title{
     font-size: 64px;
     font-weight: 200;
-    font-family: 'Dancing Script', cursive;
     color: #FFF
 }
 
 .home-title-bold{
     font-size: 64px;
     font-weight: 300;
+    color: #FBBD08;
     font-family: 'Open Sans';
 }
 
 .home-subtitle{
     font-size: 18px;
     font-weight: 200;
-    color: #DEDEDE;
+    color: #FFF;
     font-family: 'Open Sans' , 'sans-serif';
 }

@@ -1,9 +1,8 @@
-
 import React from 'react'
-
 import { Grid } from 'semantic-ui-react'
 
 class PrivacyPolicy extends React.Component {
+    
     render(){
         return(
             <Grid >

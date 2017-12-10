@@ -1,6 +1,4 @@
-
 import React from 'react'
-
 import { Grid } from 'semantic-ui-react'
 
 class TosStudent extends React.Component {

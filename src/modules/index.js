@@ -23,3 +23,4 @@ export * from './messaging';
 export * from './privacy-policy';
 export * from './terms-of-service';
 export * from './contact-us';
+export * from './scroll-to-top';

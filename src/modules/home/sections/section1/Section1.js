@@ -8,7 +8,7 @@ const showSignUp = () => {
 };
 
 const Section1 = () => (
-    <Grid style={{ backgroundImage: 'url(\'https://unsplash.com/photos/hes6nUC1MVc/download\')',
+    <Grid style={{ backgroundImage: 'url(\'https://firebasestorage.googleapis.com/v0/b/classporch-de.appspot.com/o/HomeBAckground.jpg?alt=media&token=c15ae8a4-37a4-4628-b983-25f1b3d29eda\')',
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover'}}>
@@ -19,8 +19,8 @@ const Section1 = () => (
         <br/>
         <br/>
         <br/>
-        <Button circular color='yellow' size='large' onClick={showSignUp}>SIGN UP</Button>
-        <Button circular basic color='yellow' size='large' onClick={showSignUp}>FIND MORE</Button>
+        <Button circular color='yellow' size='big' onClick={showSignUp}>SIGN UP</Button>
+        <Button circular basic color='yellow' size='big' onClick={showSignUp} style={{marginLeft: 16}}>FIND MORE</Button>
       </Grid.Column>
     </Grid.Row>
   </Grid>

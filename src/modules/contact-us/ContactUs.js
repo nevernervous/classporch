@@ -2,6 +2,7 @@ import React from 'react';
 import {Grid, Form, TextArea} from 'semantic-ui-react';
 
 export default class ContactUs extends React.Component {
+  
   render() {
     return (
       <Grid>
