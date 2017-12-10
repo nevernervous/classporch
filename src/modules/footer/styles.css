@@ -1,9 +1,9 @@
 .footer-background{
-    background-color: #0A1331;
+    background-color: #656565;
 }
 
 .footer-bottom-background{
-    background-color: #20273D;
+    background-color: #FBBD08;
 }
 
 .logo{
@@ -17,9 +17,10 @@
 } */
 
 .subscribe-label{
-    color: #FFF;
+    color: #FBBD08;
     margin-top: 30px;
-    font-size: 20px;
+    margin-bottom: 30px;
+    font-size: 32px;
     font-weight: 400;
 }
 
@@ -36,7 +37,7 @@
 }
 
 .copyright-text{
-    color: #CCC;
+    color: #FFF;
     font-family: 'Open Sans';
     font-size: 12px;
     font-weight: 300;

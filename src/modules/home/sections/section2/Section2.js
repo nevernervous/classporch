@@ -69,18 +69,15 @@ export default class Section2 extends React.Component {
     return (
       <Grid>
         <Grid.Row centered stretched verticalAlign='middle' className='section-background'>
-          <Grid.Column width={6} textAlign='left' floated='right'>
-            <div className='about-us-section'>We
-              <p className='about-us-header'>
+          <Grid.Column width={12}>
+            <div className='about-us-section'>
+              <p className='about-us-header' style={{color: '#fcbd08'}}>
                 ABOUT US
               </p>
               {readMore ? expandedContent : content}
               <br/>
               <Button circular basic color='yellow' size='large' onClick={this.expandContent}>{ readMore ? 'FIND MORE' : 'READ MORE'}</Button>
             </div>
-          </Grid.Column>
-          <Grid.Column width={6} className='section-background' floated='left'>
-            <Image src='https://images.unsplash.com/photo-1479244023581-940699c647cd' className='banner-image'/>
           </Grid.Column>
         </Grid.Row>
       </Grid>

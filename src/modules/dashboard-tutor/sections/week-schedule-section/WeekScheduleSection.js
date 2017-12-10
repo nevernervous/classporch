@@ -15,30 +15,13 @@ class WeekScheduleSection extends React.Component {
   }
 
   componentDidMount(){
-	const weekSchedule = this.props.weekSchedule.data
-    // console.log(weekSchedule)
-    if(!Object.keys(weekSchedule).length){
-      return
-    }
-    const parsedSchedule = Object.entries(weekSchedule).reduce((f,x)=>{
-      f[x[0]] ? f[x[0]] = [...x[1], ...x[1].map(t => {
-          return { start: moment(t['start-time']).format('dddd HH mm ss DD-MM-YYYY'), end: moment(t['end-time']).format('dddd HH mm ss DD-MM-YYYY') }
-        })] :
-        f[x[0]] = x[1].map(t => {
-          return { start: moment(t['start-time']).format('dddd HH mm ss DD-MM-YYYY'), end: moment(t['end-time']).format('dddd HH mm ss DD-MM-YYYY') }
-        })
-
-      return f
-    },{})
-    console.log(JSON.stringify(parsedSchedule,null,4))
-    const organizedData = this.sortSchedule(weekSchedule)
-    // console.log(organizedData)
+	  const weekSchedule = this.props.weekSchedule.data;
+    const organizedData = this.sortSchedule(weekSchedule);
     const schedules = [
       { key: 'morning',sequence:-1, value : <MorningSchedule data={organizedData} /> },
       { key: 'afternoon',sequence:0,value: <AfternoonSchedule data={organizedData} /> },
       { key:'evening',sequence:1,value: <EveningSchedule data={organizedData} /> },
     ]
-    // console.log(schedules)
     this.setState({ schedules })
   }
 
@@ -57,13 +40,8 @@ class WeekScheduleSection extends React.Component {
     let secs = moment(anyTime).format('ss')
 
     let subHrs = parseInt(hrs)
-    // console.log(subHrs)
-
     let subMins = parseInt(mins)
-    // console.log(subMins)
-
     let subSecs = parseInt(secs)
-    // console.log(secs)
 
     let startDayTimeStamp = moment(anyTime)
       .add(-subHrs,'hours')
@@ -75,17 +53,10 @@ class WeekScheduleSection extends React.Component {
 
 
   getParticularDayData = (dayFullSchedule,day) => {
-	// const displaySchedule = dayFullSchedule.map(x => {
-	// 	return { start:moment(x['start-time']).format('dddd HH mm ss DD MM YYYY'), end:moment(x['end-time']).format('dddd HH mm ss DD MM YYYY') }
-	// })
-	// console.log(day)
-	// console.log(displaySchedule)
-
     if(!dayFullSchedule.length || !dayFullSchedule){
       return { morningData:[], afternoonData:[], eveningData:[]  }
     }
-	const startTime = this.getDayStartDayTime(dayFullSchedule[0]['start-time'])
-	// console.log(moment(dayFullSchedule[0]['end-time']).format('dddd HH mm ss DD MM YYYY'))
+	  const startTime = this.getDayStartDayTime(dayFullSchedule[0]['start-time'])
     if(!dayFullSchedule[0]['start-time']){
       return { morningData:[], afternoonData:[], eveningData:[]  }
     }
@@ -101,7 +72,7 @@ class WeekScheduleSection extends React.Component {
   }
 
   sortSchedule = (weekSchedule) => {
-    const sunData = this.getParticularDayData(weekSchedule.sun,'sun')
+    const sunData = this.getParticularDayData([],'sun')
     const monData = this.getParticularDayData(weekSchedule.mon,'mon')
     const tueData = this.getParticularDayData(weekSchedule.tue,'tue')
     const wedData = this.getParticularDayData(weekSchedule.wed,'wed')
@@ -164,274 +135,7 @@ class WeekScheduleSection extends React.Component {
 
 const mapStateToProps = ( {dashboard} ) => {
   let { weekSchedule } = dashboard
-  // seed schedule
-  // weekSchedule = {
-  // 	"previous_week": "https://classporch.com/api/v1/user/:user_id/sessions?timestamp=298328732889",
-  // 	"data": {
-  // 		"sun":[{
-  // 			['start-time']": 1506825000000,
-  // 			"end-time": 1506828600000,
-  // 			"student": {
-  // 				"id": 273,
-  // 				"full_name": "Flurry Makes",
-  // 				"profile_picture": "some://url",
-  // 				"type": "student"
-  // 			}
-  // 		},{
-  // 			['start-time']": 1506846600000,
-  // 			"end-time": 1506853800000,
-  // 			"student": {
-  // 				"id": 273,
-  // 				"full_name": "Flurry Makes",
-  // 				"profile_picture": "some://url",
-  // 				"type": "student"
-  // 			}
-  // 		}],
-  // 		"mon":[{
-  // 			['start-time']": 1506918600000,
-  // 			"end-time": 1506922200000,
-  // 			"student": {
-  // 				"id": 273,
-  // 				"full_name": "Flurry Makes",
-  // 				"profile_picture": "some://url",
-  // 				"type": "student"
-  // 			}
-  // 		},{
-  // 			['start-time']": 1506947400000,
-  // 			"end-time": 1506958200000,
-  // 			"student": {
-  // 				"id": 273,
-  // 				"full_name": "Flurry Makes",
-  // 				"profile_picture": "some://url",
-  // 				"type": "student"
-  // 			}
-  // 		}],
-  // 		"tue":[{
-  // 			['start-time']": 1507012200000,
-  // 			"end-time": 1507019400000,
-  // 			"student": {
-  // 				"id": 273,
-  // 				"full_name": "Flurry Makes",
-  // 				"profile_picture": "some://url",
-  // 				"type": "student"
-  // 			}
-  // 		},
-  // 		// {
-  // 		// 	['start-time']": 8271628716782,
-  // 		// 	"end-time": 2873782687263,
-  // 		// 	"student": {
-  // 		// 		"id": 273,
-  // 		// 		"full_name": "Flurry Makes",
-  // 		// 		"profile_picture": "some://url",
-  // 		// 		"type": "student"
-  // 		// 	}
-  // 		// }
-  // 		],
-  // 		"wed":[{
-  // 			['start-time']": 1507069800000,
-  // 			"end-time": 1507077000000,
-  // 			"student": {
-  // 				"id": 273,
-  // 				"full_name": "Flurry Makes",
-  // 				"profile_picture": "some://url",
-  // 				"type": "student"
-  // 			}
-  // 		},{
-  // 			['start-time']": 1507087800000,
-  // 			"end-time": 1507091400000,
-  // 			"student": {
-  // 				"id": 273,
-  // 				"full_name": "Flurry Makes",
-  // 				"profile_picture": "some://url",
-  // 				"type": "student"
-  // 			}
-  // 		}],
-  // 		"thu":[{
-  // 			['start-time']": 1507195800000,
-  // 			"end-time": 1507206600000,
-  // 			"student": {
-  // 				"id": 273,
-  // 				"full_name": "Flurry Makes",
-  // 				"profile_picture": "some://url",
-  // 				"type": "student"
-  // 			}
-  // 		},
-  // 		// {
-  // 		// 	['start-time']": 8271628716782,
-  // 		// 	"end-time": 2873782687263,
-  // 		// 	"student": {
-  // 		// 		"id": 273,
-  // 		// 		"full_name": "Flurry Makes",
-  // 		// 		"profile_picture": "some://url",
-  // 		// 		"type": "student"
-  // 		// 	}
-  // 		// }
-  // 		],
-  // 		"fri":[{
-  // 			['start-time']": 1507257000000,
-  // 			"end-time": 1507260600000,
-  // 			"student": {
-  // 				"id": 273,
-  // 				"full_name": "Flurry Makes",
-  // 				"profile_picture": "some://url",
-  // 				"type": "student"
-  // 			}
-  // 		},
-  // 		{
-  // 			['start-time']": 1507296600000,
-  // 			"end-time": 1507303800000,
-  // 			"student": {
-  // 				"id": 273,
-  // 				"full_name": "Flurry Makes",
-  // 				"profile_picture": "some://url",
-  // 				"type": "student"
-  // 			}
-  // 		}
-  // 		],
-  // 		"sat":[{
-  // 			['start-time']": 1507354200000,
-  // 			"end-time": 1507357800000,
-  // 			"student": {
-  // 				"id": 273,
-  // 				"full_name": "Flurry Makes",
-  // 				"profile_picture": "some://url",
-  // 				"type": "student"
-  // 			}
-  // 		},{
-  // 			['start-time']": 1507365000000,
-  // 			"end-time": 1507372200000,
-  // 			"student": {
-  // 				"id": 273,
-  // 				"full_name": "Flurry Makes",
-  // 				"profile_picture": "some://url",
-  // 				"type": "student"
-  // 			}
-  // 		}]
-  // 	},
-  // 	"next_week": "https://classporch.com/api/v1/user/:user_id/sessions?timestamp=298328732889"
-  // }
-
-//   console.log(weekSchedule)
-
   return { weekSchedule }
 }
 
-
 export default connect(mapStateToProps, {  })(WeekScheduleSection);
-
-
-
-/*
-
-
-times for sunday
-=================
-"Sunday, October 01 2017 08 00 00 AM"
-1506825000000
-"Sunday, October 01 2017 09 00 00 AM"
-1506828600000
-"Sunday, October 01 2017 14 00 00 PM"
-1506846600000
-"Sunday, October 01 2017 16 00 00 PM"
-1506853800000
-
-times for monday
-==================
-
-"Monday, October 02 2017 10 00 00 AM"
-1506918600000
-"Monday, October 02 2017 11 00 00 AM"
-1506922200000
-"Monday, October 02 2017 18 00 00 PM"
-1506947400000
-"Monday, October 02 2017 21 00 00 PM"
-1506958200000
-
-
-times for tueday
-======================
-
-
-"Tuesday, October 03 2017 12 00 00 PM"
-1507012200000
-"Tuesday, October 03 2017 14 00 00 PM"
-1507019400000
-
-times for wednesday
-===================
-"Wednesday, October 04 2017 04 00 00 AM"
-1507069800000
-"Wednesday, October 04 2017 06 00 00 AM"
-1507077000000
-"Wednesday, October 04 2017 09 00 00 AM"
-1507087800000
-"Wednesday, October 04 2017 10 00 00 AM"
-1507091400000
-
-times for thurday
-================
-
-//missed
-Thursday, October 05 2017 18 00 00 PM"
-1507206600000
-
-
-friday
-================
-"Friday, October 06 2017 08 00 00 AM"
-1507257000000
-"Friday, October 06 2017 09 00 00 AM"
-1507260600000
-
-
-"Friday, October 06 2017 19 00 00 PM"
-1507296600000
-"Friday, October 06 2017 21 00 00 PM"
-1507303800000
-
-
-saturday
-================
-
-"Saturday, October 07 2017 11 00 00 AM"
-1507354200000
-"Saturday, October 07 2017 12 00 00 PM"
-1507357800000
-"Saturday, October 07 2017 14 00 00 PM"
-1507365000000
-"Saturday, October 07 2017 16 00 00 PM"
-1507372200000
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*/

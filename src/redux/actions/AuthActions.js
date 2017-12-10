@@ -82,7 +82,7 @@ export const loginUser = (userReqObject) => {
         throw('Looks like the our intern slept while working. Please try again.')
       }
     } catch (e) {
-      dispatch({type: LOGIN_USER_FAIL, payload: {errorMessage: e}})
+      dispatch({type: LOGIN_USER_FAIL, payload: {errorMessage: e.message}})
       return history.push('/login')
     }
   }
@@ -119,7 +119,7 @@ export const signupUser = (parsedForm) => {
         throw('Looks like the our intern slept while working. Please try again.')
       }
     } catch (e) {
-      return dispatch({type: SIGNUP_FAIL, payload: {errorMessage: e}})
+      return dispatch({type: SIGNUP_FAIL, payload: {errorMessage: e.message}})
     }
   }
 }

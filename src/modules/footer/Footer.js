@@ -16,6 +16,7 @@ class Footer extends Component {
     super(props);
     this.handleItemClick = this.handleItemClick.bind(this);
     this.showSignUp = this.showSignUp.bind(this);
+    this.renderFooterExtra = this.renderFooterExtra.bind(this);
   }
 
   handleItemClick = (e, {name}) => {
@@ -40,43 +41,45 @@ class Footer extends Component {
     history.push('/sign-up');
   };
 
+  renderFooterExtra = () => {
+    if (
+      !window.location.pathname.includes('contact') &&  
+      !window.location.pathname.includes('privacy') &&
+      !window.location.pathname.includes('terms') &&
+      window.location.pathname !== '/'
+    ) { return null; }
+    return (
+      <div className='footer-background'>
+        <Grid>
+          <Grid.Row/>
+          <Grid.Row centered>
+            <Grid.Column width={6} style={{marginBottom: 24}}>
+              <div className='subscribe-label'>
+                INTRODUCING TOP TUTORS
+              </div>
+              <p className='subscribe-subtitle'>
+                At ClassPorch, we have experienced and certified tutors as new tutors are carefully interviewed to
+                ensure they are well qualified before they acquire a tutoring position. With this, we can be sure that
+                our students feel comfortable working with a particular tutor and get the best help possible!
+              </p>
+              <br/>
+              <div>
+                <Button style={{marginLeft: 10, marginRight: 10}} inverted as={'a'} size='large' circular icon='facebook f' href={'https://www.facebook.com/ClassPorch-1715528735411313'}/>
+                <Button style={{marginLeft: 10, marginRight: 10}} inverted as={'a'} size='large' circular icon='twitter' href={'https://twitter.com/classporch'}/>
+                <Button style={{marginLeft: 10, marginRight: 10}} inverted as={'a'} size='large' circular icon='instagram' href={'https://www.instagram.com/classporch/'}/>
+              </div>
+            </Grid.Column>
+          </Grid.Row>
+          <Grid.Row/>
+        </Grid>
+    </div>
+    )
+  }
+
   render() {
     return (
       <div>
-        <div className='footer-background'>
-          <Grid>
-            <Grid.Row/>
-            <Grid.Row centered>
-              <Grid.Column width={1}>
-              </Grid.Column>
-              <Grid.Column width={3} floated='left'>
-                <div className='logo'>
-                  <img className='logo' src={logoLight} alt="ClassPorch"/>
-                </div>
-              </Grid.Column>
-              <Grid.Column textAlign='left' width={6} floated='right'>
-                <div>
-                  <Button inverted as={'a'} size='large' circular icon='facebook f' href={'https://www.facebook.com/ClassPorch-1715528735411313'}/>
-                  <Button inverted as={'a'} size='large' circular icon='twitter' href={'https://twitter.com/classporch'}/>
-                  <Button inverted as={'a'} size='large' circular icon='instagram' href={'https://www.instagram.com/classporch/'}/>
-                </div>
-                <div className='subscribe-label'>
-                  INTRODUCING TOP TUTORS
-                </div>
-                <p className='subscribe-subtitle'>
-                  At ClassPorch, we have experienced and certified tutors as new tutors are carefully interviewed to
-                  ensure they are well qualified before they acquire a tutoring position. With this, we can be sure that
-                  our students feel comfortable working with a particular tutor and get the best help possible!
-                </p>
-                <br/>
-                <Button color='yellow' className='subscribe-button' onClick={this.showSignUp}>FIND TUTORS</Button>
-              </Grid.Column>
-              <Grid.Column width={1}>
-              </Grid.Column>
-            </Grid.Row>
-            <Grid.Row/>
-          </Grid>
-        </div>
+        {this.renderFooterExtra()}
         <div className='footer-bottom-background'>
           <Grid centered>
             <Grid.Row>
@@ -87,36 +90,30 @@ class Footer extends Component {
                       Copyright ClassPorch 2017
                     </div>
                   </Menu.Item>
-                  <Menu.Item
-                    className='footer-button'
-                    onClick={this.handleItemClick}
-                    name='privacy-policy'>
-                    Privacy Policy
-                  </Menu.Item>
-                  <Menu.Item
-                    className='footer-button'
-                    onClick={this.handleItemClick}
-                    name='terms-of-service'>
-                    Terms of Service
-                  </Menu.Item>
-                  <Menu.Item
-                    className='footer-button'
-                    onClick={this.handleItemClick}
-                    name='contact-us'>
-                    Contact Us
-                  </Menu.Item>
-                  <Menu.Item
-                    className='footer-button'
-                    onClick={this.handleItemClick}
-                    name='pricing'>
-                    Pricing
-                  </Menu.Item>
                   <Menu.Menu position='right'>
                     <Menu.Item
-                      className='footer-button-back-to-top'
+                      className='footer-button'
                       onClick={this.handleItemClick}
-                      name='back-to-top'>
-                      Back to top
+                      name='privacy-policy'>
+                      Privacy Policy
+                    </Menu.Item>
+                    <Menu.Item
+                      className='footer-button'
+                      onClick={this.handleItemClick}
+                      name='terms-of-service'>
+                      Terms of Service
+                    </Menu.Item>
+                    <Menu.Item
+                      className='footer-button'
+                      onClick={this.handleItemClick}
+                      name='contact-us'>
+                      Contact Us
+                    </Menu.Item>
+                    <Menu.Item
+                      className='footer-button'
+                      onClick={this.handleItemClick}
+                      name='pricing'>
+                      Pricing
                     </Menu.Item>
                   </Menu.Menu>
                 </Menu>

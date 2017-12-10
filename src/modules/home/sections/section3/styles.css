@@ -27,6 +27,7 @@
 }
 
 .section-three-feature-header{
+    font-size: 18px;
     color: #E1A435;
     font-family: 'Open Sans';
     font-weight: 600;
@@ -34,7 +35,7 @@
 }
 
 .section-three-feature-details{
-    color: #CCC;
+    color: #888;
     font-family: 'Open Sans';
     font-weight: 200;
     margin-top: 10px!important;

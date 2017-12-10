@@ -1,5 +1,5 @@
 .section-background{
-    background-color: #0A1331!important;
+    background-color: #656565!important;
     padding: 0!important;
 }
 
@@ -8,7 +8,7 @@
 }
 
 .about-us-section{
-    margin: 20px 0;
+    margin: 60px 0;
 }
 
 .about-us-header{
@@ -16,7 +16,7 @@
     margin-top: 20px!important;
     font-weight: 600;
     font-size: 24px;
-    text-align: left;
+    text-align: center;
     color: white;
 }
 
@@ -25,6 +25,6 @@
     font-family: 'Open Sans';
     font-size: 13px;
     margin-top: 24px;
-    text-align: left;
+    text-align: center;
     padding: 0 40px 0 0;
 }

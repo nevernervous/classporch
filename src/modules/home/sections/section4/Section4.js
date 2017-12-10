@@ -21,7 +21,7 @@ const Section4 = () => (
       </Grid.Column>
       <Grid.Column width={6} textAlign='left' floated='left'>
         <div className='how-it-works-section'>
-          <p className='section4-header'>
+          <p className='section4-header' style={{color: '#fcbd08'}}>
             HOW IT WORKS
           </p>
           <p className='section4-content'>
