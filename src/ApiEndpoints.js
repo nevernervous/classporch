@@ -1,10 +1,11 @@
 
-// var baseUrl = 'https://classporch.herokuapp.com'
+var baseUrl = 'https://classporch.herokuapp.com/api/v1'
 
 var apiEndpoints = {
     auth:{
-        signIn: '/auth/sign_in',
-        signUp: '/auth'
+        base: baseUrl,
+        signIn: baseUrl + '/auth/sign_in',
+        signUp: baseUrl + '/auth'
     },
     
 }
