@@ -69,7 +69,6 @@ export const loginUser = (userReqObject) => {
       }
 
       const userResObject = {...res.data.user, ...res.data.session}
-
       if (res.data.user.role === 'tutor') {
         dispatch({type: LOGIN_USER_SUCCESS, payload: {userResObject}})
         return history.push('/dashboard/tutor')
@@ -111,7 +110,7 @@ export const signupUser = (parsedForm) => {
         dispatch({type: SIGNUP_SUCCESS, payload: {userResObject}})
         return history.push('/dashboard/tutor')
       } else if (res.data.user.role === 'student') {
-        dispatch({type: SIGNUP_FAIL, payload: {userResObject}})
+        dispatch({type: SIGNUP_SUCCESS, payload: {userResObject}})
         return history.push('/dashboard/student')
       } else {
         throw('Looks like the our intern slept while working. Please try again.')

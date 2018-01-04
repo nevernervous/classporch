@@ -15,14 +15,16 @@ class WeekScheduleSection extends React.Component {
   }
 
   componentDidMount(){
-	  const weekSchedule = this.props.weekSchedule.data;
-    const organizedData = this.sortSchedule(weekSchedule);
-    const schedules = [
-      { key: 'morning',sequence:-1, value : <MorningSchedule data={organizedData} /> },
-      { key: 'afternoon',sequence:0,value: <AfternoonSchedule data={organizedData} /> },
-      { key:'evening',sequence:1,value: <EveningSchedule data={organizedData} /> },
-    ]
-    this.setState({ schedules })
+    const weekSchedule = this.props.weekSchedule.data;
+    if (weekSchedule) { 
+      const organizedData = this.sortSchedule(weekSchedule);
+      const schedules = [
+        { key: 'morning',sequence:-1, value : <MorningSchedule data={organizedData} /> },
+        { key: 'afternoon',sequence:0,value: <AfternoonSchedule data={organizedData} /> },
+        { key:'evening',sequence:1,value: <EveningSchedule data={organizedData} /> },
+      ]
+      this.setState({ schedules })
+    }
   }
 
   onFetchPreviousWeek = () => {
@@ -72,7 +74,7 @@ class WeekScheduleSection extends React.Component {
   }
 
   sortSchedule = (weekSchedule) => {
-    const sunData = this.getParticularDayData([],'sun')
+    const sunData = this.getParticularDayData(weekSchedule.sun,'sun')
     const monData = this.getParticularDayData(weekSchedule.mon,'mon')
     const tueData = this.getParticularDayData(weekSchedule.tue,'tue')
     const wedData = this.getParticularDayData(weekSchedule.wed,'wed')

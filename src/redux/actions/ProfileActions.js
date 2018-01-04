@@ -16,7 +16,9 @@ import {
   UPLOAD_PROFILE_PICTURE_COMPLETE,
   UPLOAD_PROFILE_PICTURE_ERROR
 } from './types'
+import { apiEndpoints } from '../../ApiEndpoints';
 const uuidv1 = require('uuid/v1');
+
 
 export const uploadProfilePicture = (file, userId) => {
   return {type: UPLOAD_PROFILE_PICTURE, file, userId};
@@ -141,7 +143,6 @@ export const updateProfilePicture = (picturePath) => {
     payload:picturePath
   }
 }
-
 
 export const updateProfile = ({profile, userId, educationalAttributes, authToken}) => {
   return async (dispatch) => {
