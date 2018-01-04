@@ -46,7 +46,7 @@ export const profileRequested = (userId, authToken) => {
     try {
       dispatch({type: GET_PROFILE_START})
 
-      let rawRes = await fetch(`${apiEndpoints.auth.base}/user/${userId}/profile`, {
+      let rawRes = await fetch(`${apiEndpoints.base}/user/${userId}/profile`, {
         headers: {
           'auth_token': authToken
         }
@@ -170,7 +170,7 @@ export const updateProfile = ({profile, userId, educationalAttributes, authToken
 
       console.log(JSON.stringify(bodyObject, null, 4))
 
-      let resRaw = await fetch(`${apiEndpoints.auth.base}/user/${userId}`, {
+      let resRaw = await fetch(`${apiEndpoints.base}/user/${userId}`, {
         method: 'PUT',
         headers: {
           'auth_token': authToken,

@@ -14,7 +14,7 @@ export const searchRequested = (searchWord,authToken) => {
         try{
             dispatch({ type: SEARCH_START})
 
-            let rawRes = await fetch(`${apiEndpoints.auth.base}/search?type=tutors&&q=${searchWord}`,{
+            let rawRes = await fetch(`${apiEndpoints.base}/search?type=tutors&&q=${searchWord}`,{
                 headers:{
                     'auth_token':authToken
                 }
@@ -41,7 +41,7 @@ export const toggleSearchMode = (mode) => {
 //         try{
 //             dispatch({ type:REQUEST_PROFILE_START })
 
-//             let resRaw = await fetch(`${apiEndpoints.auth.base}/user/${userId}/profile`,{
+//             let resRaw = await fetch(`${apiEndpoints.base}/user/${userId}/profile`,{
 //                 headers:{
 //                     'auth_token':authToken
 //                 }
